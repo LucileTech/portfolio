@@ -7,9 +7,13 @@ const NavBar = () => {
   return (
     <>
       <div className="navbar-entire">
-        {/* The logo redirects to homePage */}
         <div className="navbar-left">
           <Link to="/">Home</Link>
+          <Link to="/">Work</Link>
+          <Link to="/">About</Link>
+          <Link to="/">Contact</Link>
+          <Link to="/">Linkedin</Link>
+          <Link to="/">Github</Link>
         </div>
       </div>
       <Outlet />
