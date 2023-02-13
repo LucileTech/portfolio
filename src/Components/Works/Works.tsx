@@ -6,20 +6,30 @@ import { NavLink } from "react-router-dom";
 const Works = () => {
   return (
     <>
-      <div className="navbar-entire">
+      <div className="App-work-section">
+        <h2 className="Section-title">MY WORK</h2>
         <div className="navbar-left">
-          <Link to="/">KOALOU</Link>
-          <p>A Website and a Web app for children mental health</p>
-          <a>VIEW</a>
-          <Link to="/">OCTOPUS</Link>
-          <p>AN E COMMERCE FOR ARTISTS AND CREATORS</p>
-          <a>VIEW</a>
-          <Link to="/">POST IT</Link>
-          <p>A web app for organization</p>
-          <a>VIEW</a>
-          <Link to="/">THE CAT AND THE FANTASTIC FOREST</Link>
-          <p>A browser game</p>
-          <a>VIEW</a>
+          <div className="grid-container">
+            <div className="grid-item">KOALOU</div>
+            <div className="grid-item">
+              A Website and a Web app for children mental health
+            </div>
+            <div className="grid-item">VIEW</div>
+
+            <div className="grid-item">OCTOPUS</div>
+            <div className="grid-item">
+              AN E COMMERCE FOR ARTISTS AND CREATORS
+            </div>
+            <div className="grid-item">VIEW</div>
+
+            <div className="grid-item">POST IT</div>
+            <div className="grid-item">A web app for organization</div>
+            <div className="grid-item">VIEW</div>
+
+            <div className="grid-item">THE CAT AND THE FANTASTIC FOREST</div>
+            <div className="grid-item">A browser game</div>
+            <div className="grid-item">VIEW</div>
+          </div>
         </div>
       </div>
       <Outlet />
