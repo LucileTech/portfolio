@@ -1,20 +1,30 @@
 import React from "react";
-// import "./Navbar.css";
+import "./Navbar.css";
 import { Link, Outlet } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <>
-      <div className="navbar-entire">
-        <div className="navbar-left">
-          <Link to="/">Home</Link>
-          <Link to="/">Work</Link>
-          <Link to="/">About</Link>
-          <Link to="/">Contact</Link>
-          <Link to="/">Linkedin</Link>
-          <Link to="/">Github</Link>
-        </div>
+      <div className="Navbar">
+        <Link to="/">Home</Link>
+        <Link to="/works">Work</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://www.linkedin.com/in/lucile-tronczyk/"
+        >
+          Linkedin
+        </a>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://github.com/LucileTech"
+        >
+          Github
+        </a>
       </div>
       <Outlet />
     </>
