@@ -49,11 +49,11 @@ a:active {
 }
 
 .App-section {
-  width: 80vw;
+  width: 70vw;
 }
 
 .Navbar {
-  width: 20vw;
+  min-width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -71,6 +71,12 @@ a:active {
 }
 .LT-logo {
   width: 20vw;
+}
+
+.Home-title:hover {
+  color: #9e9e9e;
+  text-decoration: underline;
+  font-size: 1.5rem;
 }
 
 /******************************** WORK PAGE */

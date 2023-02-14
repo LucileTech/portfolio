@@ -6,12 +6,14 @@ import { NavLink } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <Link className="App-homepage" to="/works">
+      <Link className="App-homepage Home-title" to="/works">
         <p>
           <img className="LT-logo" src={logo} alt="logo" />
         </p>
-        <p>Lucile Tronczyk</p>
-        <p>Full Stack Software Engineer in San Francisco</p>
+        <p className="Home-title">Lucile Tronczyk</p>
+        <p className="Home-title">
+          Full Stack Software Engineer in San Francisco
+        </p>
       </Link>
     </>
   );
