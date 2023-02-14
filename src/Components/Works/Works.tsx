@@ -8,7 +8,7 @@ const Works = () => {
     <>
       <div className="App-work-section">
         <h2 className="Section-title">MY WORK</h2>
-        <div className="navbar-left">
+        <div>
           <div className="grid-container">
             <div className="grid-item">KOALOU</div>
             <div className="grid-item">
