@@ -5,6 +5,7 @@ import WithNav from "./Utils/Withnav";
 import NavBar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
+import Octopus from "./pages/Octopus";
 import Works from "./components/Works/Works";
 import Contact from "./components/Contact/Contact";
 import Aboutme from "./components/Aboutme/Aboutme";
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route element={<WithoutNav />}>
             <Route path="/" element={<Home />} />
+            <Route path="/works/octopus" element={<Octopus />} />
           </Route>
           <Route element={<WithNav />}>
             <Route path="/works" element={<Works />} />
