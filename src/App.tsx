@@ -7,8 +7,9 @@ import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
 import Octopus from "./pages/Octopus";
 import Works from "./components/Works/Works";
-import Contact from "./components/Contact/Contact";
+import Contact from "./components/ContactForm/ContactForm";
 import Aboutme from "./components/Aboutme/Aboutme";
+import ContactForm from "./components/ContactForm/ContactForm";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -24,7 +25,7 @@ function App() {
           <Route element={<WithNav />}>
             <Route path="/works" element={<Works />} />
             <Route path="/about" element={<Aboutme />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<ContactForm />} />
           </Route>
         </Routes>
       </div>
