@@ -6,6 +6,9 @@ import NavBar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
 import Octopus from "./pages/Octopus";
+// import PostIt from "./pages/Postit";
+import CatGame from "./pages/CatGame";
+
 import Works from "./components/Works/Works";
 import Contact from "./components/ContactForm/ContactForm";
 import Aboutme from "./components/Aboutme/Aboutme";
@@ -21,6 +24,8 @@ function App() {
           <Route element={<WithoutNav />}>
             <Route path="/" element={<Home />} />
             <Route path="/works/octopus" element={<Octopus />} />
+            {/* <Route path="/works/postit" element={<PostIt />} /> */}
+            <Route path="/works/catgame" element={<CatGame />} />
           </Route>
           <Route element={<WithNav />}>
             <Route path="/works" element={<Works />} />

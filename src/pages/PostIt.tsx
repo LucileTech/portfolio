@@ -1,18 +1,18 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import octopus1 from "./../Images/octopus1.png";
+import postit1 from "./../Images/postit1.png";
 
 const PostIt = () => {
   return (
     <div>
-      <h2 className="Section-title">OCTOPUS</h2>
+      <h2 className="Section-title">POST IT</h2>
       <p>
-        I did the Front End and the Back End of this e-commerce with Amélie
-        Chabrand in 2 weeks in décembre 2022.
+        I coded the front and the back of this Web App with Amélie Chabrand in a
+        week.
       </p>
       <p>
-        <img className="LT-logo" src={octopus1} alt="logo" />
+        <img className="LT-logo" src={postit1} alt="logo" />
       </p>
     </div>
   );
