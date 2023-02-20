@@ -69,13 +69,23 @@ a:active {
   text-align: center;
   width: 100vw;
 }
+
 .LT-logo {
   width: 20vw;
 }
+.LT-logo:hover {
+  filter: brightness(0);
+}
+
+.Home-title {
+  color: #9e9e9e;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
 
 .Home-title:hover {
-  color: #9e9e9e;
-  text-decoration: underline;
+  color: white;
+  text-decoration: none;
   font-size: 1.5rem;
 }
 
