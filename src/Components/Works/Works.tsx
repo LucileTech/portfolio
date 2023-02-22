@@ -10,50 +10,56 @@ const Works = () => {
         <h2 className="Section-title">MY WORK</h2>
         <div>
           <div className="grid-container">
-            <div className="grid-item">KOALOU</div>
-            <div className="grid-item">
+            <div className="grid-item grid-item-left title">KOALOU</div>
+            <div className="grid-item grid-item-center resume">
               A Website and a Web app for children mental health
             </div>
             <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://www.koalou.com/book"
-              className="grid-item"
+              className="grid-item grid-item-right link"
             >
               VIEW
             </a>
 
-            <div className="grid-item">OCTOPUS</div>
-            <div className="grid-item">
-              AN E COMMERCE FOR ARTISTS AND CREATORS
+            <div className="grid-item grid-item-left title">OCTOPUS</div>
+            <div className="grid-item grid-item-center resume">
+              An E-commerce Website for artists and creators
             </div>
             <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/LucileTech/octopus-ecommerce-client"
-              className="grid-item"
+              className="grid-item grid-item-right link"
             >
               VIEW
             </a>
 
-            <div className="grid-item">POST IT</div>
-            <div className="grid-item">A web app for organization</div>
+            <div className="grid-item grid-item-left title">POST IT</div>
+            <div className="grid-item grid-item-center resume">
+              A web app for organization
+            </div>
             <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/LucileTech/post-it-project"
-              className="grid-item"
+              className="grid-item grid-item-right link"
             >
               VIEW
             </a>
 
-            <div className="grid-item">THE CAT AND THE FANTASTIC FOREST</div>
-            <div className="grid-item">A browser game</div>
+            <div className="grid-item grid-item-left title" id="cat-title">
+              THE CAT AND THE FANTASTIC FOREST
+            </div>
+            <div className="grid-item grid-item-center resume">
+              A browser game
+            </div>
             <a
               target="_blank"
               rel="noopener noreferrer"
               href="https://github.com/LucileTech/the-cat-and-the-fantastic-forest"
-              className="grid-item"
+              className="grid-item grid-item-right link"
             >
               VIEW
             </a>
