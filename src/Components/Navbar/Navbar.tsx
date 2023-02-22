@@ -24,6 +24,7 @@ const NavBar = () => {
         >
           Github
         </a>
+        <div className="menu">MENU</div>
       </div>
       <Outlet />
     </>
