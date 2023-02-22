@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Italiana&family=Raleway:wght@200&family=Roboto+Mono&display=swap");
 
+/******************************** GENERAL */
+
 body {
   font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
@@ -22,9 +24,9 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: #9e9e9e;
+  color: black;
   font-size: 4rem;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* selected link */
@@ -89,12 +91,33 @@ a:active {
   font-size: 1.5rem;
 }
 
-/******************************** WORK PAGE */
+/******************************** SECTIONS PAGES */
+
 .Section-title {
   font-family: "Italiana", serif;
   font-size: 4rem;
   font-style: normal;
   font-weight: 400;
+  text-align: center;
+  padding-top: 3rem;
+}
+
+/******************************** WORK PAGE */
+
+.App-work-section {
+  width: 70vw;
+}
+
+.grid-item-left {
+  width: 15vw;
+}
+
+.grid-item-center {
+  width: 35vw;
+}
+
+.grid-item-right {
+  width: 10vw;
 }
 
 .grid-container {
@@ -102,9 +125,98 @@ a:active {
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
+  font-size: 1rem;
+  padding-left: 5vw;
 }
 
-/****** FOOTER */
+.title {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.resume {
+  text-align: center;
+}
+
+.link:hover {
+  font-size: 1rem;
+  color: #9e9e9e;
+}
+
+#cat-title {
+  font-size: 1rem;
+}
+/******************************** ABOUT PAGE */
+
+.About-me-paragraph {
+  width: 65vw;
+  font-size: 1rem;
+  padding-left: 5vw;
+  margin-right: 10vw;
+}
+
+/******************************** CONTACT */
+
+textarea:focus,
+.name-input:focus {
+  outline: none;
+}
+
+.input {
+  width: 30vw;
+  border: none;
+  outline: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  background-color: black;
+}
+
+#mail {
+  margin: 1rem;
+}
+
+#message {
+  height: 20vh;
+  margin: 1rem;
+}
+
+.send-button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: 2px solid #555555;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  background-color: black;
+}
+
+.send-button:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.input-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70vw;
+  height: 90vh;
+}
+
+/********************************  FOOTER */
 
 .Footer-entire {
   display: flex;
