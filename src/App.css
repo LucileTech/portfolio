@@ -78,7 +78,8 @@ a:active {
 }
 
 .menu:hover {
-  display: none;
+  z-index: 5;
+  color: transparent;
 }
 
 /******************************** HOME PAGE */
