@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import WithoutNav from "./Utils/Withoutnav";
 import WithNav from "./Utils/Withnav";
@@ -14,12 +14,23 @@ import Contact from "./components/ContactForm/ContactForm";
 import Aboutme from "./components/Aboutme/Aboutme";
 import ContactForm from "./components/ContactForm/ContactForm";
 
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link, Outlet, NavLink } from "react-router-dom";
 
 function App() {
+  const [theme, setTheme] = React.useState<string>("dark");
+  const toggleTheme = () => {
+    if (theme === "dark") {
+      setTheme("light");
+    } else {
+      setTheme("dark");
+    }
+  };
+
   return (
-    <div className="App">
+    <div className={`${theme}`}>
       <div className="Navigation">
+        <button onClick={toggleTheme}>Toggle Theme</button>
+
         <Routes>
           <Route element={<WithoutNav />}>
             <Route path="/" element={<Home />} />
@@ -28,7 +39,7 @@ function App() {
             <Route path="/works/catgame" element={<CatGame />} />
           </Route>
           <Route element={<WithNav />}>
-            <Route path="/works" element={<Works />} />
+            <Route path="/works" element={<Works></Works>} />
             <Route path="/about" element={<Aboutme />} />
             <Route path="/contact" element={<ContactForm />} />
           </Route>
