@@ -2,12 +2,15 @@
 
 /******************************** GENERAL */
 
-body {
+.dark {
   font-family: "Raleway", sans-serif;
   font-size: 1.5rem;
-  color: #ffffff;
   background: linear-gradient(130.85deg, #79797b 0%, #222021 50.94%);
-  border-radius: 48px;
+  color: #ffffff;
+}
+.light {
+  background: #fff;
+  color: #333;
 }
 
 /* unvisited link */
@@ -75,11 +78,6 @@ a:active {
   transform: rotate(-90deg);
   font-size: 12rem;
   letter-spacing: 0.4em;
-}
-
-.menu:hover {
-  z-index: 5;
-  color: transparent;
 }
 
 /******************************** HOME PAGE */

@@ -1,6 +1,5 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
-import { NavLink } from "react-router-dom";
+import { Link, Outlet, NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -24,7 +23,7 @@ const NavBar = () => {
         >
           Github
         </a>
-        <div className="menu">MENU</div>
+        {/* <div className="menu">MENU</div> */}
       </div>
       <Outlet />
     </>
