@@ -2,10 +2,12 @@ import React from "react";
 import NavBar from "./../components/Navbar/Navbar";
 import { Outlet } from "react-router";
 
-export default () => {
+const Withnav = ({ theme }: { theme: string }) => {
   return (
     <>
-      <NavBar />
+      <NavBar theme={theme} />
     </>
   );
 };
+
+export default Withnav;

@@ -29,17 +29,19 @@ function App() {
   return (
     <div className={`${theme}`}>
       <div className="Navigation">
-        <button onClick={toggleTheme}>Toggle Theme</button>
+        <button className="toggle-button" onClick={toggleTheme}>
+          Toggle Theme
+        </button>
 
         <Routes>
           <Route element={<WithoutNav />}>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home theme={theme} />} />
             <Route path="/works/octopus" element={<Octopus />} />
             {/* <Route path="/works/postit" element={<PostIt />} /> */}
             <Route path="/works/catgame" element={<CatGame />} />
           </Route>
-          <Route element={<WithNav />}>
-            <Route path="/works" element={<Works></Works>} />
+          <Route element={<WithNav theme={theme} />}>
+            <Route path="/works" element={<Works />} />
             <Route path="/about" element={<Aboutme />} />
             <Route path="/contact" element={<ContactForm />} />
           </Route>
