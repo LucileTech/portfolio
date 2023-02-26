@@ -1,18 +1,27 @@
 import React from "react";
 import { Link, Outlet, NavLink } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = (props: { theme: String }) => {
   return (
     <>
       <div className="Navbar">
-        <Link to="/">Home</Link>
-        <Link to="/works">Work</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+        <Link className={`${props.theme}-link`} to="/">
+          Home
+        </Link>
+        <Link className={`${props.theme}-link`} to="/works">
+          Work
+        </Link>
+        <Link className={`${props.theme}-link`} to="/about">
+          About
+        </Link>
+        <Link className={`${props.theme}-link`} to="/contact">
+          Contact
+        </Link>
         <a
           target="_blank"
           rel="noopener noreferrer"
           href="https://www.linkedin.com/in/lucile-tronczyk/"
+          className={`${props.theme}-link`}
         >
           Linkedin
         </a>
@@ -20,6 +29,7 @@ const NavBar = () => {
           target="_blank"
           rel="noopener noreferrer"
           href="https://github.com/LucileTech"
+          className={`${props.theme}-link`}
         >
           Github
         </a>

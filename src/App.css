@@ -14,26 +14,51 @@
 }
 
 /* unvisited link */
-a:link {
+.dark-link:link {
   color: #ffffff;
+  text-decoration: none;
+}
+
+.light-link:link {
+  color: black;
   text-decoration: none;
 }
 
 /* visited link */
-a:visited {
+.dark-link:visited {
   color: #ffffff;
   text-decoration: none;
 }
 
+.light-link:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* mouse over link */
-a:hover {
+.dark-link:hover {
+  color: black;
+  font-size: 4rem;
+  text-decoration: none;
+}
+
+.light-link:hover {
   color: black;
   font-size: 4rem;
   text-decoration: none;
 }
 
 /* selected link */
-a:active {
+.dark-link:active {
+  color: #9e9e9e;
+  text-decoration: underline;
+}
+
+.light-link:active {
   color: #9e9e9e;
   text-decoration: underline;
 }
@@ -55,6 +80,12 @@ a:active {
 
 .App-section {
   width: 70vw;
+}
+
+.toggle-button {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
 }
 
 /******************************** NAVBAR */
@@ -90,22 +121,45 @@ a:active {
   width: 100vw;
 }
 
-.LT-logo {
+.LT-logo-dark {
   width: 20vw;
 }
-.LT-logo:hover {
+.LT-logo-dark:hover {
   filter: brightness(0);
   transform: scale(1.3);
 }
 
-.Home-title {
+.LT-logo-light {
+  width: 20vw;
+  filter: brightness(0);
+  transform: scale(1.3);
+}
+
+.LT-logo-light:hover {
+  filter: brightness(0);
+  transform: scale(1.3);
+}
+
+.Home-title-dark {
   color: #9e9e9e;
   font-size: 1.5rem;
   text-decoration: none;
 }
 
-.Home-title:hover {
+.Home-title-light {
+  color: #9e9e9e;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.Home-title-dark:hover {
   color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.Home-title-light:hover {
+  color: black;
   text-decoration: none;
   font-size: 1.5rem;
 }

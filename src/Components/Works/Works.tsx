@@ -4,15 +4,6 @@ import { Link, Outlet } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 const Works = () => {
-  const [theme, setTheme] = useState("dark");
-  const toggleTheme = () => {
-    if (theme === "dark") {
-      setTheme("light");
-    } else {
-      setTheme("dark");
-    }
-  };
-
   return (
     <>
       <div className="App-work-section">
