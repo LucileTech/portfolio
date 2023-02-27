@@ -3,6 +3,7 @@ import "./App.css";
 import WithoutNav from "./Utils/Withoutnav";
 import WithNav from "./Utils/Withnav";
 import NavBar from "./components/Navbar/Navbar";
+import NavBurger from "./components/Navbar/Navburger";
 import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home";
 import Octopus from "./pages/Octopus";
@@ -25,12 +26,18 @@ import {
 
 function App() {
   const [theme, setTheme] = React.useState<string>("dark");
+  const [hamburgerOpen, sethamburgerOpen] = useState(false);
+
   const toggleTheme = () => {
     if (theme === "dark") {
       setTheme("light");
     } else {
       setTheme("dark");
     }
+  };
+
+  const toggleHamburger = () => {
+    sethamburgerOpen(!hamburgerOpen);
   };
 
   const HomeCheck = () => {
@@ -47,10 +54,23 @@ function App() {
         {!HomeCheck() ? (
           ""
         ) : (
-          <label className="switch">
-            <input type="checkbox" onClick={toggleTheme} />
-            <span className="slider round"> </span>
-          </label>
+          <div className="header-with-nav">
+            <div className="header-display">
+              <div className="hamburger" onClick={toggleHamburger}>
+                <div className="burger burger1" />
+                <div className="burger burger2" />
+                <div className="burger burger3" />
+              </div>
+
+              <label className="switch">
+                <input type="checkbox" onClick={toggleTheme} />
+                <span className="slider round"> </span>
+              </label>
+            </div>
+            <div>
+              {!hamburgerOpen ? "" : <NavBurger theme={theme}></NavBurger>}
+            </div>
+          </div>
         )}
       </div>
 
