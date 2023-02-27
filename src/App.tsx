@@ -14,7 +14,14 @@ import Contact from "./components/ContactForm/ContactForm";
 import Aboutme from "./components/Aboutme/Aboutme";
 import ContactForm from "./components/ContactForm/ContactForm";
 
-import { Routes, Route, Link, Outlet, NavLink } from "react-router-dom";
+import {
+  Routes,
+  Route,
+  Link,
+  Outlet,
+  NavLink,
+  useLocation,
+} from "react-router-dom";
 
 function App() {
   const [theme, setTheme] = React.useState<string>("dark");
@@ -26,18 +33,32 @@ function App() {
     }
   };
 
+  const HomeCheck = () => {
+    const location = useLocation();
+    const currentPath = location.pathname;
+    const pathRoot = currentPath.split("/")?.[1];
+    return pathRoot;
+  };
+
   return (
     <div className={`${theme}`}>
-      <div className="Navigation">
-        <button className="toggle-button" onClick={toggleTheme}>
-          Toggle Theme
-        </button>
+      <div className="Header">
+        {/* if HomePage, does not display */}
+        {!HomeCheck() ? (
+          ""
+        ) : (
+          <label className="switch">
+            <input type="checkbox" onClick={toggleTheme} />
+            <span className="slider round"> </span>
+          </label>
+        )}
+      </div>
 
+      <div className="Navigation">
         <Routes>
           <Route element={<WithoutNav />}>
             <Route path="/" element={<Home theme={theme} />} />
             <Route path="/works/octopus" element={<Octopus />} />
-            {/* <Route path="/works/postit" element={<PostIt />} /> */}
             <Route path="/works/catgame" element={<CatGame />} />
           </Route>
           <Route element={<WithNav theme={theme} />}>
@@ -47,6 +68,7 @@ function App() {
           </Route>
         </Routes>
       </div>
+
       <div className="Footer">
         <Footer></Footer>
       </div>

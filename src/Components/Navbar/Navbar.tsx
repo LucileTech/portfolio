@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link, Outlet, NavLink } from "react-router-dom";
 
 const NavBar = (props: { theme: String }) => {
