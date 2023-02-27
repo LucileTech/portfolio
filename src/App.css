@@ -1,0 +1,569 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Raleway:wght@200&family=Roboto+Mono&display=swap");
+
+/******************************** GENERAL */
+
+.dark {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  background: linear-gradient(130.85deg, #79797b 0%, #222021 50.94%);
+  color: #ffffff;
+}
+.light {
+  background: #fff;
+  color: #333;
+}
+
+/* unvisited link */
+.dark-link:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.light-link:link {
+  color: black;
+  text-decoration: none;
+}
+
+/* visited link */
+.dark-link:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.light-link:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a {
+  color: #9e9e9e;
+  text-decoration: none;
+}
+
+/* mouse over link */
+.dark-link:hover {
+  color: black;
+  font-size: 4rem;
+  text-decoration: none;
+}
+
+.light-link:hover {
+  color: black;
+  font-size: 4rem;
+  text-decoration: none;
+}
+
+/* selected link */
+.dark-link:active {
+  color: #9e9e9e;
+  text-decoration: underline;
+}
+
+.light-link:active {
+  color: #9e9e9e;
+  text-decoration: underline;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.Header {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Navigation {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+}
+
+.Footer {
+  height: 10vh;
+}
+
+.App-section {
+  width: 70vw;
+}
+
+/* .toggle-button {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+} */
+/******************************** HEADER */
+
+.hamburger {
+  display: none;
+}
+
+.header-display {
+  display: flex;
+  justify-content: right;
+  width: 90vw;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-top: 2rem;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #dfdfdf;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #a9c9ff;
+  background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: white;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px white;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  background: white;
+  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -5px 0 0 #a3dafb;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/******************************** NAVBAR */
+
+.Navbar {
+  min-width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.menu {
+  font-family: "Italiana", serif;
+  text-align: left;
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  margin-top: -6vw;
+  margin-left: -75vw;
+  transform: rotate(-90deg);
+  font-size: 12rem;
+  letter-spacing: 0.4em;
+}
+
+/******************************** HOME PAGE */
+
+.App-homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+}
+
+.LT-logo-dark {
+  width: 20vw;
+}
+.LT-logo-dark:hover {
+  filter: brightness(0);
+  transform: scale(1.3);
+}
+
+.LT-logo-light {
+  width: 20vw;
+  filter: brightness(0);
+  transform: scale(1.3);
+}
+
+.LT-logo-light:hover {
+  filter: brightness(0);
+  transform: scale(1.3);
+}
+
+.Home-title-dark {
+  color: #9e9e9e;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.Home-title-light {
+  color: #9e9e9e;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.Home-title-dark:hover {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.Home-title-light:hover {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/******************************** SECTIONS PAGES */
+
+.Section-title {
+  font-family: "Italiana", serif;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  text-align: right;
+  padding-top: 3rem;
+}
+
+/******************************** WORK PAGE */
+
+.App-work-section {
+  width: 70vw;
+}
+
+.grid-item-left {
+  width: 15vw;
+}
+
+.grid-item-center {
+  width: 40vw;
+}
+
+.grid-item-right {
+  text-align: right;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  font-size: 1rem;
+  padding-left: 5vw;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.resume {
+  text-align: center;
+}
+
+.link {
+  font-size: 1.5rem;
+}
+
+.link:hover {
+  font-size: 1.6rem;
+  color: #9e9e9e;
+}
+
+#cat-title {
+  font-size: 1rem;
+}
+/******************************** ABOUT PAGE */
+
+.About-me-paragraph {
+  width: 65vw;
+  font-size: 1rem;
+  padding-left: 5vw;
+  margin-right: 10vw;
+  text-align: justify;
+}
+
+/******************************** CONTACT */
+
+textarea:focus,
+.name-input:focus {
+  outline: none;
+}
+
+.input {
+  width: 30vw;
+  border: none;
+  outline: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  background-color: black;
+}
+
+#mail {
+  margin: 1rem;
+}
+
+#message {
+  height: 20vh;
+  margin: 1rem;
+}
+
+.send-button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: 2px solid #555555;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  background-color: black;
+}
+
+.send-button:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.input-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 70vw;
+  height: 90vh;
+}
+
+/********************************  FOOTER */
+
+.Footer-entire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  font-size: 1rem;
+}
+
+/* .App {
+  text-align: center;
+  content: "";
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to bottom, #fff 10%, rgba(255, 255, 255, 0));
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.scroll {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.2em;
+  font-size: 11px;
+}
+
+span {
+  display: block;
+}
+
+svg {
+  margin-top: 10px;
+  width: 18px;
+  height: 18px;
+  animation: scroll 0.95s ease-in-out alternate infinite;
+  fill: none;
+  stroke: #000000;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-width: 1;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 40%;
+  opacity: 0;
+  margin: -19px auto;
+  transition: transform 1s cubic-bezier(0.14, 0.15, 0.13, 0.99);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10px);
+  }
+} */
+@media (max-width: 900px) {
+  .Navbar {
+    min-width: 20vw;
+  }
+}
+
+@media (max-width: 700px) {
+  .Navbar {
+    display: none;
+  }
+
+  .header-with-nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Navburger {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+
+  .App-work-section {
+    width: 95vw;
+  }
+
+  .About-me-paragraph {
+    width: 90vw;
+  }
+
+  .hamburger {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    z-index: 10;
+  }
+
+  .burger {
+    width: 2rem;
+    height: 0.25rem;
+    border-radius: 10px;
+    background-color: black;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+  }
+
+  .header-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 90vw;
+  }
+
+  .dark-Navbar {
+    background-color: grey;
+  }
+
+  .light-Navbar {
+    background-color: #9e9e9e;
+  }
+
+  .burger-nav {
+    font-size: 1.5rem;
+  }
+  /* unvisited link */
+  .burger-nav :link {
+    font-size: 1.5rem;
+  }
+  /* visited link */
+  .burger-nav :visited {
+    font-size: 1.5rem;
+  }
+  /* mouse over link */
+  .burger-nav:hover {
+    font-size: 1.5rem;
+  }
+  /* selected link */
+  .burger-nav :active {
+    font-size: 1.5rem;
+  }
+}
