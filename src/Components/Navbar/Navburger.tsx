@@ -4,7 +4,7 @@ import { Link, Outlet, NavLink } from "react-router-dom";
 const NavBurger = (props: { theme: String }) => {
   return (
     <>
-      <div className={`${props.theme}-Navbar Navburger`}>
+      <div className={`${props.theme}-link Navburger`}>
         <Link className={`${props.theme}-link burger-nav`} to="/">
           Home
         </Link>
