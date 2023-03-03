@@ -7,10 +7,10 @@ import { NavLink } from "react-router-dom";
 const Home = ({ theme }: { theme: string }) => {
   return (
     <div className="App-homepage">
-      <Link className="App-homepage Home-title" to="/works">
-        <p>
+      <div className="App-homepage Home-title">
+        <Link to="/works">
           <img className="avatar" src={avatar} alt="avatar" />
-        </p>
+        </Link>
         {/* <p>
           <img className={`LT-logo-${theme}`} src={logo} alt="logo" />
         </p> */}
@@ -18,13 +18,13 @@ const Home = ({ theme }: { theme: string }) => {
           Hi! I am Lucile Tronczyk, Full Stack Web Developer in San Francisco,
           CA
         </p>
-      </Link>
+      </div>
       <div className="App-homepage-buttons">
         <Link to="/contact">
           <button className="button-55">Contact me</button>
         </Link>
         <Link to="/about">
-          <button className="button-55">Know more about my</button>
+          <button className="button-55">Know more about me</button>
         </Link>
         <Link to="/works">
           <button className="button-55">My projects</button>
