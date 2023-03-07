@@ -3,6 +3,8 @@ import logo from "./../logowhite.png";
 import avatar from "./../Images/aquarelavatar2.png";
 import { Link, Outlet } from "react-router-dom";
 import { NavLink } from "react-router-dom";
+import Works from "./../Components/Works/Works";
+import Contact from "./../Components/ContactForm/ContactForm";
 
 const Home = ({ theme }: { theme: string }) => {
   return (
@@ -30,6 +32,8 @@ const Home = ({ theme }: { theme: string }) => {
           <button className="button-55">My projects</button>
         </Link>
       </div>
+      <Contact></Contact>
+      {/* <Works></Works> */}
     </div>
   );
 };
