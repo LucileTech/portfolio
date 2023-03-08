@@ -6,6 +6,8 @@ import NavBar from "./Components/Navbar/Navbar";
 import NavBurger from "./Components/Navbar/Navburger";
 import Footer from "./Components/Footer/Footer";
 import Home from "./pages/Home";
+import HomePortfolio from "./pages/HomePortfolio";
+
 import Octopus from "./pages/Octopus";
 // import PostIt from "./pages/Postit";
 import CatGame from "./pages/CatGame";
@@ -74,10 +76,16 @@ function App() {
         )}
       </div>
 
-      <div className="Navigation">
+      {/* <div className="Navigation"> */}
+      <div>
         <Routes>
+          <Route element={<WithNav theme={theme} />}>
+            <Route path="/" element={<HomePortfolio theme={theme} />} />
+          </Route>
+        </Routes>
+        {/* <Routes>
           <Route element={<WithoutNav />}>
-            <Route path="/" element={<Home theme={theme} />} />
+            <Route path="/" element={<HomePortfolio theme={theme} />} />
             <Route path="/works/octopus" element={<Octopus />} />
             <Route path="/works/catgame" element={<CatGame />} />
           </Route>
@@ -86,7 +94,7 @@ function App() {
             <Route path="/about" element={<Aboutme />} />
             <Route path="/contact" element={<ContactForm />} />
           </Route>
-        </Routes>
+        </Routes> */}
       </div>
 
       <div className="Footer">
