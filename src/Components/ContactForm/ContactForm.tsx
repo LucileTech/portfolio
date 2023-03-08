@@ -15,15 +15,16 @@ const ContactForm = () => {
 
   if (submitted) {
     return (
-      <>
+      <div className="App-section">
         <div className="text-2xl">Thank you!</div>
         <div className="text-md">We'll be in touch soon.</div>
-      </>
+      </div>
     );
   }
 
   return (
-    <div>
+    <div className="App-section">
+      <h2 className="Section-title">CONTACT ME</h2>
       <form
         action={FORM_ENDPOINT}
         onSubmit={handleSubmit}

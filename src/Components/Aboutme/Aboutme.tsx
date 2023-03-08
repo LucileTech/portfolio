@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const Aboutme = () => {
   return (
-    <div className="App-work-section">
+    <div className="App-section">
       <h2 className="Section-title">ABOUT ME</h2>
       <p className="About-me-paragraph">
         I am a creative Full Stack Software Engineer eager to get new challenges

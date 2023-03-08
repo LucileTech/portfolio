@@ -6,63 +6,61 @@ import { NavLink } from "react-router-dom";
 const Works = () => {
   return (
     <>
-      <div className="App-work-section">
+      <div className="App-section">
         <h2 className="Section-title">MY WORK</h2>
         <div>
           <div className="grid-container">
-            <div className="grid-item grid-item-left title">KOALOU</div>
-            <div className="grid-item grid-item-center resume">
-              A Website and a Web app for children mental health
+            <div className="grid-item grid-item-left title">
+              <h3>Koalou</h3>
+              <p>A Website and a Web app for children mental health</p>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.koalou.com/book"
+                className="grid-item grid-item-right link"
+              >
+                The code
+              </a>
             </div>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.koalou.com/book"
-              className="grid-item grid-item-right link"
-            >
-              VIEW
-            </a>
 
-            <div className="grid-item grid-item-left title">OCTOPUS</div>
-            <div className="grid-item grid-item-center resume">
-              An E-commerce Website for artists and creators
+            <div className="grid-item grid-item-left title">
+              <h3>Octopus</h3>
+              <p>An E-commerce Website for artists and creators</p>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/LucileTech/octopus-ecommerce-client"
+                className="grid-item grid-item-right link"
+              >
+                The code
+              </a>
             </div>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/LucileTech/octopus-ecommerce-client"
-              className="grid-item grid-item-right link"
-            >
-              VIEW
-            </a>
 
-            <div className="grid-item grid-item-left title">POST IT</div>
-            <div className="grid-item grid-item-center resume">
-              A web app for organization
+            <div className="grid-item grid-item-left title">
+              <h3>Post-It</h3>
+              <p>A web app for organization</p>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/LucileTech/post-it-project"
+                className="grid-item grid-item-right link"
+              >
+                The code
+              </a>
             </div>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/LucileTech/post-it-project"
-              className="grid-item grid-item-right link"
-            >
-              VIEW
-            </a>
 
             <div className="grid-item grid-item-left title" id="cat-title">
-              THE CAT AND THE FANTASTIC FOREST
+              <h3>THE CAT AND THE FANTASTIC FOREST</h3>
+              <p>A browser game</p>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/LucileTech/the-cat-and-the-fantastic-forest"
+                className="grid-item grid-item-right link"
+              >
+                The code
+              </a>
             </div>
-            <div className="grid-item grid-item-center resume">
-              A browser game
-            </div>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/LucileTech/the-cat-and-the-fantastic-forest"
-              className="grid-item grid-item-right link"
-            >
-              VIEW
-            </a>
           </div>
         </div>
       </div>

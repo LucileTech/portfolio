@@ -88,7 +88,8 @@ a {
 }
 
 .App-section {
-  width: 70vw;
+  width: 100vw;
+  height: 100vh;
 }
 
 /* .toggle-button {
@@ -179,7 +180,7 @@ input:checked + .slider:before {
 .Navbar {
   min-width: 20vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
   text-align: center;
 }
@@ -202,10 +203,12 @@ input:checked + .slider:before {
 
 .App-homepage {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   text-align: center;
-  width: 100vw;
+  align-items: center;
+  width: 90vw;
+  height: 90vh;
 }
 
 .App-homepage-buttons {
@@ -216,7 +219,7 @@ input:checked + .slider:before {
 }
 
 .avatar {
-  width: 30vw;
+  width: 20vw;
   --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
   --m: left var(--_i, 0%) top var(--_g), bottom var(--_i, 0%) left var(--_g),
     top var(--_i, 0%) right var(--_g), right var(--_i, 0%) bottom var(--_g);
@@ -323,11 +326,17 @@ input:checked + .slider:before {
   font-size: 4rem;
   font-style: normal;
   font-weight: 400;
-  text-align: right;
+  text-align: center;
   padding-top: 3rem;
 }
 
-/******************************** WORK PAGE */
+/******************************** STACK */
+
+.Tech-stack {
+  align-content: center;
+}
+
+/******************************** WORK */
 
 .App-work-section {
   width: 70vw;
@@ -347,7 +356,7 @@ input:checked + .slider:before {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
   font-size: 1rem;
@@ -379,7 +388,7 @@ input:checked + .slider:before {
 /******************************** ABOUT PAGE */
 
 .About-me-paragraph {
-  width: 65vw;
+  width: 90vw;
   font-size: 1rem;
   padding-left: 5vw;
   margin-right: 10vw;
@@ -446,8 +455,7 @@ textarea:focus,
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 70vw;
-  height: 90vh;
+  width: 100vw;
 }
 
 /********************************  FOOTER */
