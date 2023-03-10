@@ -10,7 +10,11 @@ const Home = ({ theme }: { theme: string }) => {
   return (
     <div className="App-homepage">
       <p className={`Home-title-${theme}`}>
-        I am Lucile Tronczyk, Full Stack Web Developer Nice to meet you!
+        <div>
+          I am <span className="homeName">Lucile Tronczyk</span>,
+        </div>
+        <div>Full Stack Web Developer</div>
+        <div>Nice to meet you!</div>
       </p>
       <img className="avatar" src={avatar} alt="avatar" />
     </div>

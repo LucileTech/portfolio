@@ -23,7 +23,7 @@ const ContactForm = () => {
   }
 
   return (
-    <div className="App-section">
+    <div className="App-section" id="contactSection">
       <h2 className="Section-title">CONTACT ME</h2>
       <form
         action={FORM_ENDPOINT}
