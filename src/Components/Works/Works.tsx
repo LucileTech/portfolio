@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const Works = () => {
   return (
     <>
-      <div className="App-section">
+      <div className="App-section" id="projectsSection">
         <h2 className="Section-title">MY WORK</h2>
         <div>
           <div className="grid-container">
