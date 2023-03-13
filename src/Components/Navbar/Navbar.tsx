@@ -4,7 +4,16 @@ import linkedin from "./../../Images/linkedin.png";
 import github from "./../../Images/github.png";
 import logo from "./../../Images/logowhite.png";
 
-const NavBar = (props: { theme: String }) => {
+const NavBar = () => {
+  const [theme, setTheme] = React.useState<string>("dark");
+  const toggleTheme = () => {
+    if (theme === "dark") {
+      setTheme("light");
+    } else {
+      setTheme("dark");
+    }
+  };
+
   const handleClickScrollStack = () => {
     const element = document.getElementById("stackSection");
     if (element) {
@@ -39,26 +48,20 @@ const NavBar = (props: { theme: String }) => {
 
   return (
     <>
-      <div className="Navbar">
-        <img className={`LT-logo-${props.theme}`} src={logo} alt="logo" />
+      <div className={`Navbar-${theme}`}>
+        <img className={`LT-logo-${theme}`} src={logo} alt="logo" />
 
-        <h3 onClick={handleClickScrollStack} className={`${props.theme}-link`}>
+        <h3 onClick={handleClickScrollStack} className={`${theme}-link`}>
           Tech Stack
         </h3>
-        <h3 onClick={handleClickScrollAbout} className={`${props.theme}-link`}>
+        <h3 onClick={handleClickScrollAbout} className={`${theme}-link`}>
           About
         </h3>
-        <h3
-          onClick={handleClickScrollProjects}
-          className={`${props.theme}-link`}
-        >
+        <h3 onClick={handleClickScrollProjects} className={`${theme}-link`}>
           Projects
         </h3>
 
-        <h3
-          onClick={handleClickScrollContact}
-          className={`${props.theme}-link`}
-        >
+        <h3 onClick={handleClickScrollContact} className={`${theme}-link`}>
           Contact
         </h3>
         <a href="https://www.linkedin.com/in/lucile-tronczyk/">
@@ -67,6 +70,10 @@ const NavBar = (props: { theme: String }) => {
         <a href="https://github.com/LucileTech">
           <img className="socials" src={github} alt="github" />
         </a>
+        <label className="switch">
+          <input type="checkbox" onClick={toggleTheme} />
+          <span className="slider round"> </span>
+        </label>
       </div>
       <Outlet />
     </>

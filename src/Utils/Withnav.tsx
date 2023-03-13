@@ -5,7 +5,7 @@ import { Outlet } from "react-router";
 const Withnav = ({ theme }: { theme: string }) => {
   return (
     <>
-      <NavBar theme={theme} />
+      <NavBar />
     </>
   );
 };
