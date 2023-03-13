@@ -51,8 +51,7 @@ function App() {
 
   return (
     <div className={`${theme}`}>
-      <div className="Header">
-        {/* if HomePage, does not display */}
+      {/* <div className="Header">
         {!HomeCheck() ? (
           ""
         ) : (
@@ -74,7 +73,7 @@ function App() {
             </div>
           </div>
         )}
-      </div>
+      </div> */}
 
       {/* <div className="Navigation"> */}
       <div>
