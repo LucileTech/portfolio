@@ -1,9 +1,11 @@
 import React from "react";
 // import "./Navbar.css";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useOutletContext } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-const Stack = () => {
+const Stack = (props: { theme: String }) => {
+  let theme = useOutletContext();
+
   return (
     <div className="Stack-entire" id="stackSection">
       <h2 className="Section-title">MY TECH STACK</h2>
@@ -13,7 +15,9 @@ const Stack = () => {
           alt="Mern"
           className="Mern"
         />
-        <p>React, Typescript, JavaScript, HTML5, CSS3, Git, handelbars</p>
+        <p className={`${props.theme}-stack`}>
+          React, Typescript, JavaScript, HTML5, CSS3, Git, handelbars
+        </p>
       </div>
     </div>
   );

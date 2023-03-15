@@ -3,15 +3,13 @@ import { Link, Outlet, NavLink } from "react-router-dom";
 import linkedin from "./../../Images/linkedin.png";
 import github from "./../../Images/github.png";
 import logo from "./../../Images/logowhite.png";
+import NavBurger from "./../../Components/Navbar/Navburger";
 
-const NavBar = () => {
-  const [theme, setTheme] = React.useState<string>("dark");
-  const toggleTheme = () => {
-    if (theme === "dark") {
-      setTheme("light");
-    } else {
-      setTheme("dark");
-    }
+const NavBar = ({ theme }: { theme: string }) => {
+  const [hamburgerOpen, sethamburgerOpen] = useState(false);
+
+  const toggleHamburger = () => {
+    sethamburgerOpen(!hamburgerOpen);
   };
 
   const handleClickScrollStack = () => {
@@ -51,31 +49,38 @@ const NavBar = () => {
       <div className={`Navbar-${theme}`}>
         <img className={`LT-logo-${theme}`} src={logo} alt="logo" />
 
-        <h3 onClick={handleClickScrollStack} className={`${theme}-link`}>
-          Tech Stack
-        </h3>
-        <h3 onClick={handleClickScrollAbout} className={`${theme}-link`}>
-          About
-        </h3>
-        <h3 onClick={handleClickScrollProjects} className={`${theme}-link`}>
-          Projects
-        </h3>
+        <div className={`Navbar`}>
+          <h3 onClick={handleClickScrollStack} className={`${theme}-link`}>
+            Tech Stack
+          </h3>
+          <h3 onClick={handleClickScrollAbout} className={`${theme}-link`}>
+            About
+          </h3>
+          <h3 onClick={handleClickScrollProjects} className={`${theme}-link`}>
+            Projects
+          </h3>
 
-        <h3 onClick={handleClickScrollContact} className={`${theme}-link`}>
-          Contact
-        </h3>
+          <h3 onClick={handleClickScrollContact} className={`${theme}-link`}>
+            Contact
+          </h3>
+        </div>
+
         <a href="https://www.linkedin.com/in/lucile-tronczyk/">
-          <img className="socials" src={linkedin} alt="linkedin" />
+          <img className={`${theme}-socials`} src={linkedin} alt="linkedin" />
         </a>
         <a href="https://github.com/LucileTech">
-          <img className="socials" src={github} alt="github" />
+          <img className={`${theme}-socials`} src={github} alt="github" />
         </a>
-        <label className="switch">
-          <input type="checkbox" onClick={toggleTheme} />
-          <span className="slider round"> </span>
-        </label>
+        <div className="hamburger" onClick={toggleHamburger}>
+          <div className={`${theme} burger burger1`} />
+          <div className={`${theme} burger burger2`} />
+          <div className={`${theme} burger burger3`} />
+        </div>
       </div>
-      <Outlet />
+
+      <div>{!hamburgerOpen ? "" : <NavBurger theme={theme}></NavBurger>}</div>
+
+      <Outlet></Outlet>
     </>
   );
 };
