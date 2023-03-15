@@ -27,21 +27,6 @@ import {
 } from "react-router-dom";
 
 function App() {
-  const [theme, setTheme] = React.useState<string>("dark");
-  const [hamburgerOpen, sethamburgerOpen] = useState(false);
-
-  const toggleTheme = () => {
-    if (theme === "dark") {
-      setTheme("light");
-    } else {
-      setTheme("dark");
-    }
-  };
-
-  const toggleHamburger = () => {
-    sethamburgerOpen(!hamburgerOpen);
-  };
-
   const HomeCheck = () => {
     const location = useLocation();
     const currentPath = location.pathname;
@@ -50,7 +35,7 @@ function App() {
   };
 
   return (
-    <div className={`${theme}`}>
+    <>
       {/* <div className="Header">
         {!HomeCheck() ? (
           ""
@@ -78,9 +63,9 @@ function App() {
       {/* <div className="Navigation"> */}
       <div>
         <Routes>
-          <Route element={<WithNav theme={theme} />}>
-            <Route path="/" element={<HomePortfolio theme={theme} />} />
-          </Route>
+          {/* <Route element={<WithNav theme={theme} />}> */}
+          <Route path="/" element={<HomePortfolio />} />
+          {/* </Route> */}
         </Routes>
         {/* <Routes>
           <Route element={<WithoutNav />}>
@@ -96,10 +81,8 @@ function App() {
         </Routes> */}
       </div>
 
-      <div className="Footer">
-        <Footer></Footer>
-      </div>
-    </div>
+      <Footer></Footer>
+    </>
   );
 }
 
