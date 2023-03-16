@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const FORM_ENDPOINT =
   "https://public.herotofu.com/v1/0546efd0-ae38-11ed-a31e-753411848f80"; // TODO - fill on the later step
 
-const ContactForm = () => {
+const ContactForm = ({ theme }: { theme: string }) => {
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = () => {
     setTimeout(() => {

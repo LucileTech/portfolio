@@ -1,30 +1,11 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import WithoutNav from "./Utils/Withoutnav";
-import WithNav from "./Utils/Withnav";
-import NavBar from "./Components/Navbar/Navbar";
-import NavBurger from "./Components/Navbar/Navburger";
-import Footer from "./Components/Footer/Footer";
-import Home from "./pages/Home";
 import HomePortfolio from "./pages/HomePortfolio";
-
-import Octopus from "./pages/Octopus";
+// import Octopus from "./pages/Octopus";
 // import PostIt from "./pages/Postit";
-import CatGame from "./pages/CatGame";
+// import CatGame from "./pages/CatGame";
 
-import Works from "./Components/Works/Works";
-import Contact from "./Components/ContactForm/ContactForm";
-import Aboutme from "./Components/Aboutme/Aboutme";
-import ContactForm from "./Components/ContactForm/ContactForm";
-
-import {
-  Routes,
-  Route,
-  Link,
-  Outlet,
-  NavLink,
-  useLocation,
-} from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 function App() {
   const HomeCheck = () => {
@@ -80,8 +61,6 @@ function App() {
           </Route>
         </Routes> */}
       </div>
-
-      <Footer></Footer>
     </>
   );
 }
