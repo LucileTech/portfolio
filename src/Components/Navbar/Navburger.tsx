@@ -36,7 +36,7 @@ const NavBurger = (props: { theme: String }) => {
 
   return (
     <>
-      <div className={`${props.theme}-link Navburger`}>
+      <div className={`${props.theme}-link Navburger ${props.theme}`}>
         <div
           onClick={handleClickScrollStack}
           className={`${props.theme}-link burger-nav`}

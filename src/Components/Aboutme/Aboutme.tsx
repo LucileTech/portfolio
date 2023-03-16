@@ -2,7 +2,7 @@ import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-const Aboutme = () => {
+const Aboutme = ({ theme }: { theme: string }) => {
   return (
     <div className="App-section" id="aboutSection">
       <h2 className="Section-title">ABOUT ME</h2>

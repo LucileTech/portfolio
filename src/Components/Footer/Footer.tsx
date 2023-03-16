@@ -3,7 +3,7 @@ import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({ theme }: { theme: string }) => {
   return (
     <div className="Footer-entire">
       <p className="copyright-footer">
