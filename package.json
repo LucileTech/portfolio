@@ -5,7 +5,6 @@
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.11",
@@ -23,7 +22,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest __tests__/ --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -45,6 +44,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "@testing-library/react": "^14.0.0",
+    "gh-pages": "^5.0.0",
+    "jest": "^27.5.1"
   }
 }

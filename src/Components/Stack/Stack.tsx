@@ -109,18 +109,18 @@ const Stack = (props: { theme: String }) => {
           <div className="hexagon">
             <div className="hexagontent">CMS</div>
           </div>
-          {/* <div className="hexagon">
-            <div className="hexagontent">TO</div>
+          <div className="hexagon">
+            <div className="hexagontent">Jest</div>
           </div>
           <div className="hexagon">
-            <div className="hexagontent">LEARN</div>
+            <div className="hexagontent">React Testing Library</div>
           </div>
           <div className="hexagon">
-            <div className="hexagontent">MORE</div>
+            <div className="hexagontent"></div>
           </div>
           <div className="hexagon">
-            <div className="hexagontent">...</div>
-          </div> */}
+            <div className="hexagontent"></div>
+          </div>
         </div>
         {/* <div className="ibws-fix">
           <div className="hexagon">
