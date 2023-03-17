@@ -68,14 +68,18 @@ a {
 
 /* mouse over link */
 .dark-link:hover {
-  font-family: "Italiana", serif;
+  /* font-family: "Italiana", serif; */
   text-decoration: none;
+  cursor: pointer;
+  font-weight: bolder;
 }
 
 .light-link:hover {
   color: black;
-  font-family: "Italiana", serif;
+  /* font-family: "Italiana", serif; */
   text-decoration: none;
+  cursor: pointer;
+  font-weight: bolder;
 }
 
 /* selected link */
@@ -221,7 +225,7 @@ input:checked + .slider:before {
   align-items: center;
   position: fixed;
   background-color: white;
-  z-index: 1;
+  z-index: 200;
   padding-top: 0.5rem;
   height: 10vh;
 }
@@ -237,7 +241,7 @@ input:checked + .slider:before {
   align-items: center;
   position: fixed;
   background-color: black;
-  z-index: 1;
+  z-index: 200;
   padding-top: 0.5rem;
   height: 10vh;
 }
@@ -330,12 +334,12 @@ input:checked + .slider:before {
 
 .Home-title-dark {
   color: white;
-  font-size: 2rem;
+  font-size: 2.1rem;
   text-decoration: none;
 }
 
 .Home-title-light {
-  font-size: 2rem;
+  font-size: 2.1rem;
   text-decoration: none;
 }
 
@@ -394,7 +398,7 @@ input:checked + .slider:before {
 /******************************** SECTIONS PAGES */
 
 .Section-title {
-  font-family: "Italiana", serif;
+  /* font-family: "Italiana", serif; */
   font-size: 4rem;
   font-style: normal;
   font-weight: 400;
@@ -436,7 +440,7 @@ input:checked + .slider:before {
   remove border-radius for sharp corners on hexagons */
   width: 67px;
   height: 116px;
-  border-radius: 20%/5%;
+  /* border-radius: 20%/5%; */
 }
 .hexagon::before {
   background-color: inherit;
