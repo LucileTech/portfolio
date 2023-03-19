@@ -633,6 +633,14 @@ h5 {
 
 /******************************** CONTACT */
 
+.Section-title.text-2xl {
+  font-size: 2rem;
+}
+
+.Section-title.text-md {
+  font-size: 2rem;
+}
+
 textarea:focus,
 .name-input:focus {
   outline: none;
