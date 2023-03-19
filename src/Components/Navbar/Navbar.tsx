@@ -86,4 +86,6 @@ const NavBar = ({ theme }: { theme: string }) => {
   );
 };
 
+
+
 export default NavBar;
