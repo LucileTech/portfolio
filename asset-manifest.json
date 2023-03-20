@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.bfaee3cc.css",
+    "main.css": "/static/css/main.e57caf6f.css",
     "main.js": "/static/js/main.611fe464.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/aquarelavatar2.png": "/static/media/aquarelavatar2.3de43829583723839669.png",
@@ -12,12 +12,12 @@
     "static/media/github.png": "/static/media/github.f11021803f68852df283.png",
     "static/media/linkedin.png": "/static/media/linkedin.032cf8a63be2f0f4d425.png",
     "index.html": "/index.html",
-    "main.bfaee3cc.css.map": "/static/css/main.bfaee3cc.css.map",
+    "main.e57caf6f.css.map": "/static/css/main.e57caf6f.css.map",
     "main.611fe464.js.map": "/static/js/main.611fe464.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfaee3cc.css",
+    "static/css/main.e57caf6f.css",
     "static/js/main.611fe464.js"
   ]
 }
