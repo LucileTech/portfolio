@@ -1,6 +1,4 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 import catgame1 from "./../Images/catgame1.png";
 
 const CatGame = () => {

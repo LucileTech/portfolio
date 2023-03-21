@@ -1,6 +1,4 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 import Navbar from "./../Components/Navbar/Navbar";
 import Home from "./../pages/Home";
 import Stack from "./../Components/Stack/Stack";

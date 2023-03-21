@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-// import "./Navbar.css";
-import { Link, Outlet } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 import koalou from "./../../Images/koalou3.png";
 import octopus from "./../../Images/octopus3.png";
 import postit from "./../../Images/postit1.png";

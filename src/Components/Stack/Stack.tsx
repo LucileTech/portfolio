@@ -1,21 +1,9 @@
 import React from "react";
-// import "./Navbar.css";
-import { Link, Outlet, useOutletContext } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 
 const Stack = (props: { theme: String }) => {
-  let theme = useOutletContext();
-
   return (
     <div className="Stack-entire" id="stackSection">
       <h2 className="Section-title">MY TECH STACK</h2>
-      {/* <div className="Tech-stack">
-        <img
-          src="https://res.cloudinary.com/dsioshcio/image/upload/v1670944889/MERN-logo_fx0noa.png"
-          alt="Mern"
-          className="Mern"
-        />
-      </div> */}
 
       <div className="honeycomb">
         <div className="ibws-fix">
@@ -122,34 +110,6 @@ const Stack = (props: { theme: String }) => {
             <div className="hexagontent"></div>
           </div>
         </div>
-        {/* <div className="ibws-fix">
-          <div className="hexagon">
-            <div className="hexagontent">
-              <h1>IF</h1>
-            </div>
-          </div>
-          <div className="hexagon">
-            <div className="hexagontent">&mdash; Rudyard Kipling</div>
-          </div>
-          <div className="hexanone">
-            <div className="hexagontent"></div>
-          </div>
-          <div className="hexagon">
-            <div className="hexagontent"></div>
-          </div>
-          <div className="hexagon">
-            <div className="hexagontent"></div>
-          </div>
-          <div className="hexanone">
-            <div className="hexagontent"></div>
-          </div>
-          <div className="hexagon">
-            <div className="hexagontent"></div>
-          </div>
-          <div className="hexagon">
-            <div className="hexagontent"></div>
-          </div>
-        </div> */}
       </div>
     </div>
   );

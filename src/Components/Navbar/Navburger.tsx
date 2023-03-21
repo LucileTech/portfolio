@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { Link, Outlet, NavLink } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 const NavBurger = (props: { theme: String }) => {
   const handleClickScrollStack = () => {

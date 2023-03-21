@@ -1,6 +1,4 @@
 import React from "react";
-import { Link, Outlet } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 import octopus1 from "./../Images/octopus1.png";
 
 const Aboutme = () => {
