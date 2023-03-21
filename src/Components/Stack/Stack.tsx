@@ -104,10 +104,10 @@ const Stack = (props: { theme: String }) => {
             <div className="hexagontent">React Testing Library</div>
           </div>
           <div className="hexagon">
-            <div className="hexagontent"></div>
+            <div className="hexagontent">React Native</div>
           </div>
           <div className="hexagon">
-            <div className="hexagontent"></div>
+            <div className="hexagontent">...&more, always learning</div>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "./../Components/Navbar/Navbar";
-import Home from "./../pages/Home";
+import Home from "./../Components/Home/Home";
 import Stack from "./../Components/Stack/Stack";
 import Works from "./../Components/Works/Works";
 import Contact from "./../Components/ContactForm/ContactForm";
@@ -19,7 +19,7 @@ const HomePortfolio = () => {
   };
 
   return (
-    <div className={`${theme}`}>
+    <div className={`app ${theme}`}>
       <Navbar theme={theme}></Navbar>
       <Home theme={theme}></Home>
       <Stack theme={theme}></Stack>
