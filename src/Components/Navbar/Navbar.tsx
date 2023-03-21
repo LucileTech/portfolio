@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Link, Outlet, NavLink } from "react-router-dom";
-import { render, screen } from "@testing-library/react";
+import React, { useState } from "react";
+import { Outlet } from "react-router-dom";
 import linkedin from "./../../Images/linkedin.png";
 import github from "./../../Images/github.png";
 import logo from "./../../Images/logowhite.png";
@@ -85,7 +84,5 @@ const NavBar = ({ theme }: { theme: string }) => {
     </>
   );
 };
-
-
 
 export default NavBar;

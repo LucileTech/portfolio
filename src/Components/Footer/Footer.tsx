@@ -1,7 +1,4 @@
 import React from "react";
-// import "./Navbar.css";
-import { Link, Outlet } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 
 const Footer = ({ theme }: { theme: string }) => {
   return (
