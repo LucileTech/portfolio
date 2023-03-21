@@ -3,13 +3,14 @@ import koalou from "./../../Images/koalou3.png";
 import octopus from "./../../Images/octopus3.png";
 import postit from "./../../Images/postit1.png";
 import catgame from "./../../Images/catgame1.png";
+import brightmind from "./../../Images/brightmind.webp";
 
 const Works = ({ theme }: { theme: string }) => {
   const [hovered, setHovered] = useState(false);
   const toggleHover = () => setHovered(!hovered);
   return (
     <div className="App-section App-work-section" id="projectsSection">
-      <h2 className="Section-title">MY WORK</h2>
+      <h2 className="Section-title work">MY WORK</h2>
       <div className="container">
         <div className="card">
           <div className="face face1">
@@ -21,7 +22,7 @@ const Works = ({ theme }: { theme: string }) => {
           </div>
           <div className="face face2">
             <div className="content">
-              <p className="projectTasks">
+              <div className="projectTasks">
                 What I did :
                 <ul className="projectTasksList">
                   <li>
@@ -47,23 +48,29 @@ const Works = ({ theme }: { theme: string }) => {
                     Sentry, Google Analytics
                   </li>
                 </ul>
-              </p>
-              {/* <a href="#">Read More</a> */}
+              </div>
+              <a
+                href="https://www.koalou.com/zencool"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                The WebSite
+              </a>
             </div>
           </div>
         </div>
+
         <div className="card">
           <div className="face face1">
             <div className="content">
               <img src={octopus} alt="octopus"></img>
               <h3>Octopus</h3>
-              <h5>A startup committed to the mental well-being of children</h5>
+              <h5>An e-commerce for artists and creators</h5>
             </div>
           </div>
           <div className="face face2">
             <div className="content">
-              <p className="projectTasks">
-                <h5>An e commerce for artists and creators</h5>
+              <div className="projectTasks">
                 What I did :
                 <ul className="projectTasksList">
                   <li>
@@ -83,7 +90,7 @@ const Works = ({ theme }: { theme: string }) => {
                     Deployed with Netlify and hosted the data with MongoDB Atlas
                   </li>
                 </ul>
-              </p>
+              </div>
               <a
                 href="https://github.com/LucileTech/octopus-ecommerce-client"
                 target="_blank"
@@ -99,13 +106,12 @@ const Works = ({ theme }: { theme: string }) => {
             <div className="content">
               <img src={postit} alt="post-it"></img>
               <h3>Post It</h3>
-              <h5>A startup committed to the mental well-being of children</h5>
+              <h5>An organizational Web App</h5>
             </div>
           </div>
           <div className="face face2">
             <div className="content">
-              <p className="projectTasks">
-                <h5>An organizational App</h5>
+              <div className="projectTasks">
                 What I did :
                 <ul className="projectTasksList">
                   <li>
@@ -120,7 +126,7 @@ const Works = ({ theme }: { theme: string }) => {
                     Atlas
                   </li>
                 </ul>
-              </p>
+              </div>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
@@ -136,26 +142,87 @@ const Works = ({ theme }: { theme: string }) => {
             <div className="content">
               <img src={catgame} alt="cat-game"></img>
               <h3>The Cat and The Fantastic Forest</h3>
-              <h5>A startup committed to the mental well-being of children</h5>
+              <h5>A browser game</h5>
             </div>
           </div>
           <div className="face face2">
             <div className="content">
-              <p className="projectTasks">
-                <h5>A browser game</h5>
+              <div className="projectTasks">
                 What I did :
                 <ul className="projectTasksList">
                   <li>Coded with JavaScript, CSS & HTML</li>
                   <li>Endeled the animation with Canvas</li>
                   <li>Deployed with Git Pages</li>
                 </ul>
-              </p>
+              </div>
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://github.com/LucileTech/the-cat-and-the-fantastic-forest"
               >
                 The Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="face face1">
+            <div className="content">
+              <div className="choresapp">
+                <h5 id="comingsoon">Coming soon</h5>
+              </div>
+              <h3>Chores App</h3>
+              <h5>A fun Chores App for parents and their children</h5>
+            </div>
+          </div>
+          <div className="face face2">
+            <div className="content">
+              <div className="projectTasks">
+                What I did :
+                <ul className="projectTasksList">
+                  <li>
+                    Took part in design meetings to understand the design
+                    progress/purposes, and contribute ideas
+                  </li>
+                  <li>
+                    Contributed to building the Mobile Application and took part
+                    in discussions about better solutions to implement it
+                  </li>
+                </ul>
+              </div>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                Coming Soon
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="face face1">
+            <div className="content">
+              <img src={brightmind} alt="octopus"></img>
+              <h3>Bright Mind Enrichment</h3>
+              <h5>
+                Community Wellness education and tech innovation to help people
+                in need
+              </h5>
+            </div>
+          </div>
+          <div className="face face2">
+            <div className="content">
+              <div className="projectTasks">
+                What I did :
+                <ul className="projectTasksList">
+                  <li>Maintained the Website</li>
+                </ul>
+              </div>
+              <a
+                href="https://brightmindenrichment.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                The Website
               </a>
             </div>
           </div>

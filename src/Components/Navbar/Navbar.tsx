@@ -46,35 +46,35 @@ const NavBar = ({ theme }: { theme: string }) => {
 
   return (
     <>
-      <div className={`Navbar-${theme}`}>
+      <div className={`allNavbar ${theme}`}>
         <img className={`LT-logo-${theme}`} src={logo} alt="logo" />
 
         <div className={`Navbar`}>
-          <h3 onClick={handleClickScrollStack} className={`${theme}-link`}>
+          <h3 onClick={handleClickScrollStack} className={`link ${theme}`}>
             Tech Stack
           </h3>
-          <h3 onClick={handleClickScrollAbout} className={`${theme}-link`}>
+          <h3 onClick={handleClickScrollAbout} className={`link ${theme}`}>
             About
           </h3>
-          <h3 onClick={handleClickScrollProjects} className={`${theme}-link`}>
+          <h3 onClick={handleClickScrollProjects} className={`link ${theme}`}>
             Projects
           </h3>
 
-          <h3 onClick={handleClickScrollContact} className={`${theme}-link`}>
+          <h3 onClick={handleClickScrollContact} className={`link ${theme}`}>
             Contact
           </h3>
         </div>
 
         <a href="https://www.linkedin.com/in/lucile-tronczyk/">
-          <img className={`${theme}-socials`} src={linkedin} alt="linkedin" />
+          <img className={`socials-${theme}`} src={linkedin} alt="linkedin" />
         </a>
         <a href="https://github.com/LucileTech">
-          <img className={`${theme}-socials`} src={github} alt="github" />
+          <img className={`socials-${theme}`} src={github} alt="github" />
         </a>
         <div className="hamburger" onClick={toggleHamburger}>
-          <div className={`${theme} burger burger1`} />
-          <div className={`${theme} burger burger2`} />
-          <div className={`${theme} burger burger3`} />
+          <div className={`burger burger1 ${theme}`} />
+          <div className={`burger burger2 ${theme}`} />
+          <div className={`burger burger3 ${theme}`} />
         </div>
       </div>
 
