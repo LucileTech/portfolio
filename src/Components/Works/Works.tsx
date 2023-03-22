@@ -185,10 +185,10 @@ const Works = ({ theme }: { theme: string }) => {
                     Took part in design meetings to understand the design
                     progress/purposes, and contribute ideas
                   </li>
-                  <li>
+                  {/* <li>
                     Contributed to building the Mobile Application and took part
                     in discussions about better solutions to implement it
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <a href="#" target="_blank" rel="noopener noreferrer">
@@ -198,7 +198,7 @@ const Works = ({ theme }: { theme: string }) => {
           </div>
         </div>
 
-        <div className="card">
+        {/* <div className="card">
           <div className="face face1">
             <div className="content">
               <img src={brightmind} alt="octopus"></img>
@@ -226,7 +226,7 @@ const Works = ({ theme }: { theme: string }) => {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
