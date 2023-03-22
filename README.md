@@ -7,15 +7,14 @@
 
 ### Credits :
 
-I am a Full Stack :space_invader: Developer 
 
-- Github logo : Copyright Pixel perfect
+Github logo : Copyright Pixel perfect
 
-- Linkedin Logo : Copyright Freepik
+Linkedin Logo : Copyright Freepik
 
-- Photographs : Elfie Mahé
+Photographs : Elfie Mahé
 
-- Inspiration from : @Jhonierpc @gzuzkstro @gpyne
+Inspiration from : @Jhonierpc @gzuzkstro @gpyne
 
 ---
 
