@@ -1,15 +1,4 @@
-# This is my portfolio
-
-Credits :
-
-
-
-
-# READ ME
-
-# PORTFOLIO OF LUCILE TRONCZYK
-
-This is my Full Stack Developer Portfolio 
+# This is my Full Stack Developer Portfolio
 
 # Made by Lucile Tronczyk
 
