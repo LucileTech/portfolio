@@ -36,16 +36,13 @@ const Works = ({ theme }: { theme: string }) => {
                   </li>
                   <li>
                     Built entire responsive Web Pages with React.js and Next.js,
-                    using React-Bootstrap for the Web Site
+                    using React-Bootstrap for the Web Site, based on Figma web
+                    designs
                   </li>
-                  <li>
-                    Reproduced Figma web designs, implemented a redesign of 2
-                    pages, created 5 pages
-                  </li>
-                  <li>Collaborated with passion on GitLab</li>
                   <li>
                     Worked in a technical environment with Graphql, PostgreSQL,
-                    Sentry, Google Analytics
+                    Sentry, Google Analytics, collaborated with passion on
+                    GitLab
                   </li>
                 </ul>
               </div>
@@ -53,6 +50,7 @@ const Works = ({ theme }: { theme: string }) => {
                 href="https://www.koalou.com/zencool"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="projectButton"
               >
                 The WebSite
               </a>
@@ -179,11 +177,11 @@ const Works = ({ theme }: { theme: string }) => {
           <div className="face face2">
             <div className="content">
               <div className="projectTasks">
-                What I did :
+                What I do :
                 <ul className="projectTasksList">
                   <li>
-                    Took part in design meetings to understand the design
-                    progress/purposes, and contribute ideas
+                    I am taking part in design meetings to understand the design
+                    progress/purposes, and contributing ideas
                   </li>
                   {/* <li>
                     Contributed to building the Mobile Application and took part
