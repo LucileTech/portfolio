@@ -190,6 +190,8 @@ a {
   width: 35vw;
   max-width: 400px;
   border-radius: 50%;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .avatarbis:hover {
@@ -200,6 +202,8 @@ a {
   font-size: 2.1rem;
   text-decoration: none;
   text-align: center;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .App-homepage-buttons {
@@ -896,6 +900,7 @@ input:checked + .slider:before {
 
   .Section-title {
     font-size: 2rem;
+    padding-top: 20vh;
   }
 
   .App-section {
@@ -916,6 +921,18 @@ input:checked + .slider:before {
     font-size: 2.1rem;
     text-decoration: none;
     text-align: center;
+  }
+
+  .socials-dark {
+    filter: invert(1);
+    width: 1rem;
+    padding: 0.8rem;
+  }
+
+  .socials-light {
+    filter: invert(0);
+    width: 1rem;
+    padding: 0.8rem;
   }
 
   /********* ABOUT */
