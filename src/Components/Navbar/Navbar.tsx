@@ -12,6 +12,14 @@ const NavBar = ({ theme }: { theme: string }) => {
     sethamburgerOpen(!hamburgerOpen);
   };
 
+  const handleClickScrollHome = () => {
+    const element = document.getElementById("homeSection");
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const handleClickScrollStack = () => {
     const element = document.getElementById("stackSection");
     if (element) {
@@ -47,7 +55,12 @@ const NavBar = ({ theme }: { theme: string }) => {
   return (
     <>
       <div className={`allNavbar ${theme}`}>
-        <img className={`LT-logo-${theme}`} src={logo} alt="logo" />
+        <img
+          onClick={handleClickScrollHome}
+          className={`LT-logo-${theme}`}
+          src={logo}
+          alt="logo"
+        />
 
         <div className={`Navbar`}>
           <h3 onClick={handleClickScrollStack} className={`link ${theme}`}>

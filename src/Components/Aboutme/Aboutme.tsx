@@ -21,7 +21,7 @@ const Aboutme = ({ theme }: { theme: string }) => {
           <p className="AboutmeParagraph">
             I already have 10 years of experience in the professional world,
             working as a Cinematography Researcher before I discovered my
-            passion for coding. I have been surrendered by Engineers friends all
+            passion for coding. I have been surrounded by Engineers friends all
             my life and It took me a pandemic to try to code and realize I did
             not have a thing only for the people, but also for the job.
           </p>
