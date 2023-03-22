@@ -4,12 +4,7 @@ import avatar from "./../../Images/mebyelfie.webp";
 const Home = ({ theme }: { theme: string }) => {
   return (
     <div className="App-homepage">
-      <img
-        // className="avatar"
-        className="avatarbis"
-        src={avatar}
-        alt="avatar"
-      />
+      <img className="avatarbis" src={avatar} alt="avatar" />
       <div className={`Home-title ${theme}`}>
         <div className="intro-post-it-now">
           <p className="line-1 anim-typewriter">Hi!</p>
@@ -18,7 +13,6 @@ const Home = ({ theme }: { theme: string }) => {
           I am <span className="homeName">Lucile Tronczyk</span>,
         </div>
         <div>Full Stack Web Developer</div>
-        {/* <div>Nice to meet you!</div> */}
       </div>
     </div>
   );
