@@ -35,30 +35,21 @@ const NavBurger = (props: { theme: String }) => {
 
   return (
     <>
-      <div className={`${props.theme}-link Navburger ${props.theme}`}>
+      <div className={`Navburger ${props.theme}`}>
         <div
           onClick={handleClickScrollStack}
-          className={`${props.theme}-link burger-nav`}
+          className={`burger-nav firstNavLink`}
         >
           Stack
         </div>
-        <div
-          onClick={handleClickScrollAbout}
-          className={`${props.theme}-link burger-nav`}
-        >
+        <div onClick={handleClickScrollAbout} className={`burger-nav`}>
           About
         </div>
-        <div
-          onClick={handleClickScrollProjects}
-          className={`${props.theme}-link burger-nav`}
-        >
+        <div onClick={handleClickScrollProjects} className={`burger-nav`}>
           Projects
         </div>
 
-        <div
-          onClick={handleClickScrollContact}
-          className={`${props.theme}-link burger-nav`}
-        >
+        <div onClick={handleClickScrollContact} className={`burger-nav`}>
           Contact
         </div>
       </div>

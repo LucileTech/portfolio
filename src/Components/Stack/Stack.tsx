@@ -8,16 +8,16 @@ const Stack = (props: { theme: String }) => {
       <div className="honeycomb">
         <div className="ibws-fix">
           <div className="hexagon">
-            <div className="hexagontent">JavaScript</div>
+            <div className="hexagontent bold">JavaScript</div>
           </div>
           <div className="hexagon">
-            <div className="hexagontent">HTML</div>
+            <div className="hexagontent bold">HTML</div>
           </div>
           <div className="hexagon">
-            <div className="hexagontent">CSS</div>
+            <div className="hexagontent bold">CSS</div>
           </div>
           <div className="hexagon">
-            <div className="hexagontent">React</div>
+            <div className="hexagontent bold">React</div>
           </div>
           <div className="hexagon">
             <div className="hexagontent">Redux</div>
@@ -52,18 +52,18 @@ const Stack = (props: { theme: String }) => {
             <div className="hexagontent">NoSQL</div>
           </div>
           <div className="hexagon">
-            <div className="hexagontent">Node</div>
+            <div className="hexagontent bold">Node</div>
           </div>
           <div className="hexagon">
-            <div className="hexagontent">Express</div>
+            <div className="hexagontent bold">Express</div>
           </div>
         </div>
         <div className="ibws-fix">
           <div className="hexagon">
-            <div className="hexagontent">MongoDB</div>
+            <div className="hexagontent bold">MongoDB</div>
           </div>
           <div className="hexagon">
-            <div className="hexagontent">Git</div>
+            <div className="hexagontent bold">Git</div>
           </div>
           <div className="hexagon">
             <div className="hexagontent">GitHub</div>
