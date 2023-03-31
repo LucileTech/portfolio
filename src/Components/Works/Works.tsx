@@ -61,6 +61,48 @@ const Works = ({ theme }: { theme: string }) => {
         <div className="card">
           <div className="face face1">
             <div className="content">
+              <div className="choresapp">
+                <h5 id="comingsoon">Coming soon</h5>
+              </div>
+              <h3>Chores App</h3>
+              <h5>A fun Chores App for parents and their children</h5>
+            </div>
+          </div>
+          <div className="face face2">
+            <div className="content">
+              <div className="projectTasks">
+                What I did :
+                <ul className="projectTasksList">
+                  <li>
+                    Took part in design meetings to understand the design
+                    progress/purposes, and contributing ideas
+                  </li>
+                  <li>
+                    Contributed to Developers best practices for working
+                    efficiently as a team: Tickets Integration, Codebase
+                    Structure and File Naming conventions, Branches
+                    Nomenclature, Pull request template, PR resolution
+                  </li>
+                  <li>
+                    Started the code from scratch with React and Redux on the
+                    Front and Node.js and PostreSQL on the back.
+                  </li>
+                </ul>
+              </div>
+              <a
+                href="https://github.com/LucileTech"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Coming Soon
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="face face1">
+            <div className="content">
               <img src={octopus} alt="octopus"></img>
               <h3>Octopus</h3>
               <h5>An e-commerce for artists and creators</h5>
@@ -159,38 +201,6 @@ const Works = ({ theme }: { theme: string }) => {
                 href="https://github.com/LucileTech/the-cat-and-the-fantastic-forest"
               >
                 The Code
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="card">
-          <div className="face face1">
-            <div className="content">
-              <div className="choresapp">
-                <h5 id="comingsoon">Coming soon</h5>
-              </div>
-              <h3>Chores App</h3>
-              <h5>A fun Chores App for parents and their children</h5>
-            </div>
-          </div>
-          <div className="face face2">
-            <div className="content">
-              <div className="projectTasks">
-                What I do :
-                <ul className="projectTasksList">
-                  <li>
-                    I am taking part in design meetings to understand the design
-                    progress/purposes, and contributing ideas
-                  </li>
-                  {/* <li>
-                    Contributed to building the Mobile Application and took part
-                    in discussions about better solutions to implement it
-                  </li> */}
-                </ul>
-              </div>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                Coming Soon
               </a>
             </div>
           </div>

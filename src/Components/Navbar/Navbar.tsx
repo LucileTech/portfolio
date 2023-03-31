@@ -78,10 +78,18 @@ const NavBar = ({ theme }: { theme: string }) => {
           </h3>
         </div>
 
-        <a href="https://www.linkedin.com/in/lucile-tronczyk/">
+        <a
+          href="https://www.linkedin.com/in/lucile-tronczyk/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img className={`socials-${theme}`} src={linkedin} alt="linkedin" />
         </a>
-        <a href="https://github.com/LucileTech">
+        <a
+          href="https://github.com/LucileTech"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <img className={`socials-${theme}`} src={github} alt="github" />
         </a>
         <div className="hamburger" onClick={toggleHamburger}>

@@ -52,7 +52,7 @@ const Stack = (props: { theme: String }) => {
             <div className="hexagontent">NoSQL</div>
           </div>
           <div className="hexagon">
-            <div className="hexagontent bold">Node</div>
+            <div className="hexagontent bold">Node.js</div>
           </div>
           <div className="hexagon">
             <div className="hexagontent bold">Express</div>
@@ -66,10 +66,10 @@ const Stack = (props: { theme: String }) => {
             <div className="hexagontent bold">Git</div>
           </div>
           <div className="hexagon">
-            <div className="hexagontent">GitHub</div>
+            <div className="hexagontent">GitLab</div>
           </div>
           <div className="hexagon">
-            <div className="hexagontent">GitLab</div>
+            <div className="hexagontent bold">GitHub</div>
           </div>
           <div className="hexagon">
             <div className="hexagontent">PhotoShop</div>
@@ -95,7 +95,7 @@ const Stack = (props: { theme: String }) => {
             <div className="hexagontent">Docker</div>
           </div>
           <div className="hexagon">
-            <div className="hexagontent">CMS</div>
+            <div className="hexagontent">PostgreSQL</div>
           </div>
           <div className="hexagon">
             <div className="hexagontent">Jest</div>
@@ -107,7 +107,7 @@ const Stack = (props: { theme: String }) => {
             <div className="hexagontent">React Native</div>
           </div>
           <div className="hexagon">
-            <div className="hexagontent">...&more, always learning</div>
+            <div className="hexagontent bold">SQL</div>
           </div>
         </div>
       </div>
