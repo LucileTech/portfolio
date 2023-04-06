@@ -3,7 +3,7 @@ import koalou from "./../../Images/koalou3.png";
 import octopus from "./../../Images/octopus3.png";
 import postit from "./../../Images/postit1.png";
 import catgame from "./../../Images/catgame1.png";
-import brightmind from "./../../Images/brightmind.webp";
+import onecomunity from "./../../Images/onecomunity.png";
 
 const Works = ({ theme }: { theme: string }) => {
   const [hovered, setHovered] = useState(false);
@@ -95,6 +95,44 @@ const Works = ({ theme }: { theme: string }) => {
                 rel="noopener noreferrer"
               >
                 Coming Soon
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="face face1">
+            <div className="content">
+              <img src={onecomunity} alt="onecomunity"></img>
+              <h3>One Comunity</h3>
+              <h5>
+                A global change organization creating blueprints, tools,
+                tutorials for all aspects of sustainable living and creating
+              </h5>
+            </div>
+          </div>
+          <div className="face face2">
+            <div className="content">
+              <div className="projectTasks">
+                What I did :
+                <ul className="projectTasksList">
+                  <li>
+                    Maintained, optimized, and managed the in-use web
+                    application built with Node.js, React.js and MongoDB with
+                    more than 60 Developers
+                  </li>
+                  <li>
+                    Submitted PR reviews, tested the app and searched for bugs
+                    and submitted them
+                  </li>
+                </ul>
+              </div>
+              <a
+                href="https://github.com/OneCommunityGlobal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                The Code
               </a>
             </div>
           </div>
@@ -205,36 +243,6 @@ const Works = ({ theme }: { theme: string }) => {
             </div>
           </div>
         </div>
-
-        {/* <div className="card">
-          <div className="face face1">
-            <div className="content">
-              <img src={brightmind} alt="octopus"></img>
-              <h3>Bright Mind Enrichment</h3>
-              <h5>
-                Community Wellness education and tech innovation to help people
-                in need
-              </h5>
-            </div>
-          </div>
-          <div className="face face2">
-            <div className="content">
-              <div className="projectTasks">
-                What I did :
-                <ul className="projectTasksList">
-                  <li>Maintained the Website</li>
-                </ul>
-              </div>
-              <a
-                href="https://brightmindenrichment.org/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                The Website
-              </a>
-            </div>
-          </div>
-        </div> */}
       </div>
     </div>
   );
