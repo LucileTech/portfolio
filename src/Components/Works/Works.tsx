@@ -4,6 +4,7 @@ import octopus from "./../../Images/octopus3.png";
 import postit from "./../../Images/postit1.png";
 import catgame from "./../../Images/catgame1.png";
 import onecomunity from "./../../Images/onecomunity.png";
+import imagevault from "./../../Images/imagevault.png";
 
 const Works = ({ theme }: { theme: string }) => {
   const [hovered, setHovered] = useState(false);
@@ -61,11 +62,12 @@ const Works = ({ theme }: { theme: string }) => {
         <div className="card">
           <div className="face face1">
             <div className="content">
-              <div className="choresapp">
-                <h5 id="comingsoon">Coming soon</h5>
-              </div>
-              <h3>Chores App</h3>
-              <h5>A fun Chores App for parents and their children</h5>
+              <img src={imagevault} alt="imagevault"></img>
+              <h3>Image Vault</h3>
+              <h5>
+                A place for museums, archives, and cultural organizations to
+                share their collections.
+              </h5>
             </div>
           </div>
           <div className="face face2">
@@ -74,27 +76,24 @@ const Works = ({ theme }: { theme: string }) => {
                 What I did :
                 <ul className="projectTasksList">
                   <li>
-                    Took part in design meetings to understand the design
-                    progress/purposes, and contributing ideas
+                    Took part in meetings and worked in team with Agile
+                    Methodology
                   </li>
                   <li>
                     Contributed to Developers best practices for working
-                    efficiently as a team: Tickets Integration, Codebase
-                    Structure and File Naming conventions, Branches
-                    Nomenclature, Pull request template, PR resolution
+                    efficiently as a team with Github and Github Project
                   </li>
                   <li>
-                    Started the code from scratch with React and Redux on the
-                    Front and Node.js and PostreSQL on the back.
+                    Coded my tasks with React and Redux, Typescript, Next.
                   </li>
                 </ul>
               </div>
               <a
-                href="https://github.com/LucileTech"
+                href="https://github.com/chingu-voyages/v44-tier3-team-37"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Coming Soon
+                The Code
               </a>
             </div>
           </div>
@@ -133,6 +132,48 @@ const Works = ({ theme }: { theme: string }) => {
                 rel="noopener noreferrer"
               >
                 The Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="face face1">
+            <div className="content">
+              <div className="choresapp">
+                <h5 id="comingsoon">Coming soon</h5>
+              </div>
+              <h3>Chores App</h3>
+              <h5>A fun Chores App for parents and their children</h5>
+            </div>
+          </div>
+          <div className="face face2">
+            <div className="content">
+              <div className="projectTasks">
+                What I did :
+                <ul className="projectTasksList">
+                  <li>
+                    Took part in design meetings to understand the design
+                    progress/purposes, and contributing ideas
+                  </li>
+                  <li>
+                    Contributed to Developers best practices for working
+                    efficiently as a team: Tickets Integration, Codebase
+                    Structure and File Naming conventions, Branches
+                    Nomenclature, Pull request template, PR resolution
+                  </li>
+                  <li>
+                    Started the code from scratch with React and Redux on the
+                    Front and Node.js and PostreSQL on the back.
+                  </li>
+                </ul>
+              </div>
+              <a
+                href="https://github.com/LucileTech"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Coming Soon
               </a>
             </div>
           </div>
