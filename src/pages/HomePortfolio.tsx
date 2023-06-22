@@ -24,7 +24,7 @@ const HomePortfolio = () => {
     // Creating a timeout within the useEffect hook
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 2500);
   }, []);
 
   if (isLoading) {
