@@ -88,6 +88,13 @@ a {
 .Section-title.work {
   margin-bottom: 0.5rem;
 }
+/****************************************************************  PRELOADER */
+
+.preLoader {
+  display: flex;
+  justify-content: center;
+  margin-top: 30vh;
+}
 
 /****************************************************************  NAVBAR & HEADER */
 

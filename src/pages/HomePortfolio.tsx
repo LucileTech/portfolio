@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import ReactLoading from "react-loading";
 import Navbar from "./../Components/Navbar/Navbar";
 import Home from "./../Components/Home/Home";
 import Stack from "./../Components/Stack/Stack";
@@ -9,6 +10,7 @@ import Footer from "./../Components/Footer/Footer";
 
 const HomePortfolio = () => {
   const [theme, setTheme] = React.useState<string>("light");
+  const [isLoading, setIsLoading] = useState(true);
 
   const toggleTheme = () => {
     if (theme === "dark") {
@@ -17,6 +19,26 @@ const HomePortfolio = () => {
       setTheme("dark");
     }
   };
+
+  useEffect(() => {
+    // Creating a timeout within the useEffect hook
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="preLoader">
+        <ReactLoading
+          type={"spinningBubbles"}
+          color={"#a3dafb"}
+          height={200}
+          width={200}
+        />
+      </div>
+    );
+  }
 
   return (
     <div className={`app ${theme}`}>
