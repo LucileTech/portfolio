@@ -1,5 +1,4 @@
-
-# Lucile Tronczyk Full Stack Developer Portfolio
+# Lucile Landry Full Stack Developer Portfolio
 
 ---
 
@@ -11,7 +10,6 @@
 
 ### Credits :
 
-
 Github logo : Copyright Pixel perfect
 
 Linkedin Logo : Copyright Freepik
@@ -21,7 +19,6 @@ Photographs : Elfie Mahé
 Inspiration from : @Jhonierpc @gzuzkstro @gpyne
 
 ---
-
 
 ## [Link to my portfolio](https://lucile-tech.com/)
 
