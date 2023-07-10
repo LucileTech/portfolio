@@ -7,13 +7,13 @@ const Footer = ({ theme }: { theme: string }) => {
   return (
     <div className="Footer-entire">
       <div className="copyright-footer">
-        <a href="https://www.linkedin.com/in/lucile-Landry/">
+        <a href="https://www.linkedin.com/in/lucile-tronczyk/">
           <img className={`socials-${theme}`} src={linkedin} alt="linkedin" />
         </a>
         <a href="https://github.com/LucileTech">
           <img className={`socials-${theme}`} src={github} alt="github" />
         </a>
-        <div>Copyright © 2023 Lucile Landry. All Rights Reserved.</div>
+        <div>Copyright © 2023 Lucile Tronczyk. All Rights Reserved.</div>
       </div>
     </div>
   );

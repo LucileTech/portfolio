@@ -79,7 +79,7 @@ const NavBar = ({ theme }: { theme: string }) => {
         </div>
 
         <a
-          href="https://www.linkedin.com/in/lucile-landry/"
+          href="https://www.linkedin.com/in/lucile-tronczyk/"
           target="_blank"
           rel="noopener noreferrer"
         >

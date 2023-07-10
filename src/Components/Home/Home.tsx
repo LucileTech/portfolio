@@ -10,7 +10,7 @@ const Home = ({ theme }: { theme: string }) => {
           <p className="line-1 anim-typewriter">Hi!</p>
         </div>
         <div>
-          I am <span className="homeName">Lucile Landry</span>,
+          I am <span className="homeName">Lucile Tronczyk</span>,
         </div>
         <div>Full Stack Web Developer</div>
       </div>
