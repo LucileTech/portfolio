@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.d568570b.css",
-    "main.js": "/static/js/main.a2660e76.js",
+    "main.css": "/static/css/main.3bcf22b6.css",
+    "main.js": "/static/js/main.eb61e6f9.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/onecomunity.png": "/static/media/onecomunity.5bb3110ed8383f2b65c5.png",
     "static/media/imagevault.png": "/static/media/imagevault.410c9b2506ea9338d363.png",
     "static/media/octopus3.png": "/static/media/octopus3.e5662b1f9b6c26a8a0a5.png",
     "static/media/catgame1.png": "/static/media/catgame1.66b2e2e8da647ec00d1c.png",
     "static/media/koalou3.png": "/static/media/koalou3.96d48572ee84eb195c2a.png",
-    "static/media/mebyelfie.webp": "/static/media/mebyelfie.fdf968d08b4d83d1208f.webp",
     "static/media/postit1.png": "/static/media/postit1.208e1641e0ca819e6fce.png",
+    "static/media/LucileTech.jpeg": "/static/media/LucileTech.0420a59f9617e19a01c2.jpeg",
     "static/media/mybyelfiebiscopy.webp": "/static/media/mybyelfiebiscopy.0ddb459d5ddbec002f82.webp",
     "static/media/logowhite.png": "/static/media/logowhite.cd42e38cdcf506a07b03.png",
     "static/media/github.png": "/static/media/github.f11021803f68852df283.png",
     "static/media/linkedin.png": "/static/media/linkedin.032cf8a63be2f0f4d425.png",
     "index.html": "/index.html",
-    "main.d568570b.css.map": "/static/css/main.d568570b.css.map",
-    "main.a2660e76.js.map": "/static/js/main.a2660e76.js.map",
+    "main.3bcf22b6.css.map": "/static/css/main.3bcf22b6.css.map",
+    "main.eb61e6f9.js.map": "/static/js/main.eb61e6f9.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d568570b.css",
-    "static/js/main.a2660e76.js"
+    "static/css/main.3bcf22b6.css",
+    "static/js/main.eb61e6f9.js"
   ]
 }
