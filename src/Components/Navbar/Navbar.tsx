@@ -36,6 +36,14 @@ const NavBar = ({ theme }: { theme: string }) => {
     }
   };
 
+  const handleClickScrollReviews = () => {
+    const element = document.getElementById("reviewsSection");
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const handleClickScrollAbout = () => {
     const element = document.getElementById("aboutSection");
     if (element) {
@@ -65,6 +73,9 @@ const NavBar = ({ theme }: { theme: string }) => {
         <div className={`Navbar`}>
           <h3 onClick={handleClickScrollStack} className={`link ${theme}`}>
             Tech Stack
+          </h3>
+          <h3 onClick={handleClickScrollReviews} className={`link ${theme}`}>
+            Reviews
           </h3>
           <h3 onClick={handleClickScrollAbout} className={`link ${theme}`}>
             About
