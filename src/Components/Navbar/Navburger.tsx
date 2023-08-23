@@ -17,6 +17,14 @@ const NavBurger = (props: { theme: String }) => {
     }
   };
 
+  const handleClickScrollReviews = () => {
+    const element = document.getElementById("reviewsSection");
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const handleClickScrollAbout = () => {
     const element = document.getElementById("aboutSection");
     if (element) {
@@ -41,6 +49,9 @@ const NavBurger = (props: { theme: String }) => {
           className={`burger-nav firstNavLink`}
         >
           Stack
+        </div>
+        <div onClick={handleClickScrollReviews} className={`burger-nav`}>
+          Reviews
         </div>
         <div onClick={handleClickScrollAbout} className={`burger-nav`}>
           About

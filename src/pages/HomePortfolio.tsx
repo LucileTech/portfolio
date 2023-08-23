@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import ReactLoading from "react-loading";
 import Navbar from "./../Components/Navbar/Navbar";
 import Home from "./../Components/Home/Home";
+import About from "./../Components/Aboutme/Aboutme";
 import Stack from "./../Components/Stack/Stack";
+import Reviews from "./../Components/Reviews/Reviews";
 import Works from "./../Components/Works/Works";
 import Contact from "./../Components/ContactForm/ContactForm";
-import About from "./../Components/Aboutme/Aboutme";
 import Footer from "./../Components/Footer/Footer";
 
 const HomePortfolio = () => {
@@ -45,6 +46,7 @@ const HomePortfolio = () => {
       <Navbar theme={theme}></Navbar>
       <Home theme={theme}></Home>
       <Stack theme={theme}></Stack>
+      <Reviews theme={theme}></Reviews>
       <About theme={theme}></About>
       <Works theme={theme}></Works>
       <Contact theme={theme}></Contact>
