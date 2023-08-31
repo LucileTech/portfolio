@@ -11,7 +11,7 @@ const Works = ({ theme }: { theme: string }) => {
   const toggleHover = () => setHovered(!hovered);
   return (
     <div className="App-section App-work-section" id="projectsSection">
-      <h2 className="Section-title work">MY WORK</h2>
+      <h2 className="Section-title work">MY PROJECTS</h2>
       <div className="container">
         <div className="card">
           <div className="face face1">

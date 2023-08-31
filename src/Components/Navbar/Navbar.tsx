@@ -71,19 +71,18 @@ const NavBar = ({ theme }: { theme: string }) => {
         />
 
         <div className={`Navbar`}>
-          <h3 onClick={handleClickScrollStack} className={`link ${theme}`}>
-            Tech Stack
+          <h3 onClick={handleClickScrollAbout} className={`link ${theme}`}>
+            About
           </h3>
           <h3 onClick={handleClickScrollReviews} className={`link ${theme}`}>
             Reviews
           </h3>
-          <h3 onClick={handleClickScrollAbout} className={`link ${theme}`}>
-            About
+          <h3 onClick={handleClickScrollStack} className={`link ${theme}`}>
+            Tech Stack
           </h3>
           <h3 onClick={handleClickScrollProjects} className={`link ${theme}`}>
             Projects
           </h3>
-
           <h3 onClick={handleClickScrollContact} className={`link ${theme}`}>
             Contact
           </h3>

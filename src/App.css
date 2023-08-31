@@ -536,6 +536,54 @@ h5 {
   width: 65vw;
   height: 100%;
 }
+
+.reviews-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.review-card {
+  background-color: #f0ebe7;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 30rem;
+  max-width: 90%;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: black;
+}
+
+.review-card h2 {
+  margin-bottom: 5px;
+}
+
+.position {
+  color: #888;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.pagination-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #0073b1;
+}
+
 /**************************************************************** CONTACT */
 
 .Section-title.text-2xl {
@@ -849,10 +897,10 @@ input:checked + .slider:before {
     justify-content: space-around;
     text-align: center;
     font-family: "Poppins", sans-serif;
-    font-size: 0.4rem;
+    font-size: 0.9rem;
     position: fixed;
-    height: 20vh;
-    width: 20vw;
+    height: 25vh;
+    width: 25vw;
     right: 0;
     /* margin-right: 5vw; */
     z-index: 199;
@@ -1009,5 +1057,21 @@ input:checked + .slider:before {
   .hexagon::after {
     width: 40px;
     height: 65px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hexagontent {
+    font-size: 0.8rem;
+  }
+  .hexagon,
+  .hexagon::before,
+  .hexagon::after {
+    /* easy way: height is width * 1.732
+  actual formula is 2*(width/(2*Math.tan(Math.PI/6)))
+  remove border-radius for sharp corners on hexagons */
+    width: 67px;
+    height: 116px;
+    /* border-radius: 20%/5%; */
   }
 }
