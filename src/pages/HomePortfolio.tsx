@@ -45,9 +45,9 @@ const HomePortfolio = () => {
     <div className={`app ${theme}`}>
       <Navbar theme={theme}></Navbar>
       <Home theme={theme}></Home>
-      <Stack theme={theme}></Stack>
-      <Reviews theme={theme}></Reviews>
       <About theme={theme}></About>
+      <Reviews theme={theme}></Reviews>
+      <Stack theme={theme}></Stack>
       <Works theme={theme}></Works>
       <Contact theme={theme}></Contact>
       <div className="Footer-toggle">
