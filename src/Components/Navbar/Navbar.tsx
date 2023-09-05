@@ -6,86 +6,47 @@ import logo from "./../../Images/logowhite.png";
 import NavBurger from "./../../Components/Navbar/Navburger";
 
 const NavBar = ({ theme }: { theme: string }) => {
-  const [hamburgerOpen, sethamburgerOpen] = useState(false);
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
   const toggleHamburger = () => {
-    sethamburgerOpen(!hamburgerOpen);
+    setHamburgerOpen(!hamburgerOpen);
   };
 
-  const handleClickScrollHome = () => {
-    const element = document.getElementById("homeSection");
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
     if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
-  const handleClickScrollStack = () => {
-    const element = document.getElementById("stackSection");
-    if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const handleClickScrollProjects = () => {
-    const element = document.getElementById("projectsSection");
-    if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const handleClickScrollReviews = () => {
-    const element = document.getElementById("reviewsSection");
-    if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const handleClickScrollAbout = () => {
-    const element = document.getElementById("aboutSection");
-    if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const handleClickScrollContact = () => {
-    const element = document.getElementById("contactSection");
-    if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const sectionIds = [
+    "aboutSection",
+    "reviewsSection",
+    "stackSection",
+    "projectsSection",
+    "contactSection",
+  ];
 
   return (
     <>
       <div className={`allNavbar ${theme}`}>
         <img
-          onClick={handleClickScrollHome}
+          onClick={() => scrollToSection("homeSection")}
           className={`LT-logo-${theme}`}
           src={logo}
           alt="logo"
         />
 
         <div className={`Navbar`}>
-          <h3 onClick={handleClickScrollAbout} className={`link ${theme}`}>
-            About
-          </h3>
-          <h3 onClick={handleClickScrollReviews} className={`link ${theme}`}>
-            Reviews
-          </h3>
-          <h3 onClick={handleClickScrollStack} className={`link ${theme}`}>
-            Tech Stack
-          </h3>
-          <h3 onClick={handleClickScrollProjects} className={`link ${theme}`}>
-            Projects
-          </h3>
-          <h3 onClick={handleClickScrollContact} className={`link ${theme}`}>
-            Contact
-          </h3>
+          {sectionIds.map((sectionId) => (
+            <h3
+              key={sectionId}
+              onClick={() => scrollToSection(sectionId)}
+              className={`link ${theme}`}
+            >
+              {sectionId.replace("Section", "")}
+            </h3>
+          ))}
         </div>
 
         <a
@@ -109,9 +70,9 @@ const NavBar = ({ theme }: { theme: string }) => {
         </div>
       </div>
 
-      <div>{!hamburgerOpen ? "" : <NavBurger theme={theme}></NavBurger>}</div>
+      {hamburgerOpen && <NavBurger theme={theme} />}
 
-      <Outlet></Outlet>
+      <Outlet />
     </>
   );
 };
