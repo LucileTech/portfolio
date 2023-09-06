@@ -1,68 +1,35 @@
+import React from "react";
 import { Outlet } from "react-router-dom";
 
 const NavBurger = (props: { theme: String }) => {
-  const handleClickScrollStack = () => {
-    const element = document.getElementById("stackSection");
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
     if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
-  const handleClickScrollProjects = () => {
-    const element = document.getElementById("projectsSection");
-    if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const sectionNames: string[] = [
+    "aboutSection",
+    "reviewsSection",
+    "stackSection",
+    "projectsSection",
+    "contactSection",
+  ];
 
-  const handleClickScrollReviews = () => {
-    const element = document.getElementById("reviewsSection");
-    if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const handleClickScrollAbout = () => {
-    const element = document.getElementById("aboutSection");
-    if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
-  const handleClickScrollContact = () => {
-    const element = document.getElementById("contactSection");
-    if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const navigationLinks = sectionNames.map((sectionName, index) => (
+    <div
+      key={index}
+      onClick={() => scrollToSection(sectionName)}
+      className={`burger-nav ${index === 0 ? "firstNavLink" : ""}`}
+    >
+      {sectionName.charAt(0).toUpperCase() + sectionName.slice(1, -7)}
+    </div>
+  ));
 
   return (
     <>
-      <div className={`Navburger ${props.theme}`}>
-        <div
-          onClick={handleClickScrollAbout}
-          className={`burger-nav firstNavLink`}
-        >
-          About
-        </div>
-        <div onClick={handleClickScrollReviews} className={`burger-nav`}>
-          Reviews
-        </div>
-        <div onClick={handleClickScrollStack} className={`burger-nav `}>
-          Stack
-        </div>
-        <div onClick={handleClickScrollProjects} className={`burger-nav`}>
-          Projects
-        </div>
-        <div onClick={handleClickScrollContact} className={`burger-nav`}>
-          Contact
-        </div>
-      </div>
+      <div className={`Navburger ${props.theme}`}>{navigationLinks}</div>
       <Outlet />
     </>
   );
