@@ -62,12 +62,11 @@ const Works = ({ theme }: { theme: string }) => {
         <div className="card">
           <div className="face face1">
             <div className="content">
-              <img src={imagevault} alt="imagevault"></img>
-              <h3>Image Vault</h3>
-              <h5>
-                A place for museums, archives, and cultural organizations to
-                share their collections.
-              </h5>
+              <div className="choresapp">
+                <h5 id="comingsoon">Coming soon</h5>
+              </div>
+              <h3>Icebreaker</h3>
+              <h5>A game to breake the Ice</h5>
             </div>
           </div>
           <div className="face face2">
@@ -75,25 +74,16 @@ const Works = ({ theme }: { theme: string }) => {
               <div className="projectTasks">
                 What I did :
                 <ul className="projectTasksList">
-                  <li>
-                    Took part in meetings and worked in team with Agile
-                    Methodology
-                  </li>
-                  <li>
-                    Contributed to Developers best practices for working
-                    efficiently as a team with Github and Github Project
-                  </li>
-                  <li>
-                    Coded my tasks with React and Redux, Typescript, Next.
-                  </li>
+                  <li>To be added</li>
                 </ul>
               </div>
               <a
-                href="https://github.com/chingu-voyages/v44-tier3-team-37"
+                href="https://github.com/chingu-voyages/v45-tier3-team-51"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="projectButton"
               >
-                The Code
+                The WebSite
               </a>
             </div>
           </div>
@@ -128,6 +118,46 @@ const Works = ({ theme }: { theme: string }) => {
               </div>
               <a
                 href="https://github.com/OneCommunityGlobal"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                The Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="card">
+          <div className="face face1">
+            <div className="content">
+              <img src={imagevault} alt="imagevault"></img>
+              <h3>Image Vault</h3>
+              <h5>
+                A place for museums, archives, and cultural organizations to
+                share their collections.
+              </h5>
+            </div>
+          </div>
+          <div className="face face2">
+            <div className="content">
+              <div className="projectTasks">
+                What I did :
+                <ul className="projectTasksList">
+                  <li>
+                    Took part in meetings and worked in team with Agile
+                    Methodology
+                  </li>
+                  <li>
+                    Contributed to Developers best practices for working
+                    efficiently as a team with Github and Github Project
+                  </li>
+                  <li>
+                    Coded my tasks with React and Redux, Typescript, Next.
+                  </li>
+                </ul>
+              </div>
+              <a
+                href="https://github.com/chingu-voyages/v44-tier3-team-37"
                 target="_blank"
                 rel="noopener noreferrer"
               >
