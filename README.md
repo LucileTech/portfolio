@@ -1,4 +1,4 @@
-# Lucile Tronczyk Full Stack Developer Portfolio
+# Lucile Tronczyk - Full Stack Software Engineer, Web Developer - Portfolio
 
 ---
 
