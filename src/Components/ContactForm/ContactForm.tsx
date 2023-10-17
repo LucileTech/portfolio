@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 
+type ContactFormProps = {
+  theme: string;
+};
+
 const FORM_ENDPOINT =
   "https://public.herotofu.com/v1/0546efd0-ae38-11ed-a31e-753411848f80";
 
-const ContactForm = ({ theme }: { theme: string }) => {
+const ContactForm: React.FC<ContactFormProps> = ({ theme }) => {
   const [submitted, setSubmitted] = useState(false);
   const handleSubmit = () => {
     setTimeout(() => {

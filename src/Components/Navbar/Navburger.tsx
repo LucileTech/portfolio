@@ -1,7 +1,11 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 
-const NavBurger = (props: { theme: String }) => {
+type NavBurgerProps = {
+  theme: string;
+};
+
+const NavBurger: React.FC<NavBurgerProps> = ({ theme }) => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -29,7 +33,7 @@ const NavBurger = (props: { theme: String }) => {
 
   return (
     <>
-      <div className={`Navburger ${props.theme}`}>{navigationLinks}</div>
+      <div className={`Navburger ${theme}`}>{navigationLinks}</div>
       <Outlet />
     </>
   );

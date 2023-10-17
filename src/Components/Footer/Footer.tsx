@@ -1,9 +1,12 @@
 import React from "react";
 import linkedin from "./../../Images/linkedin.png";
 import github from "./../../Images/github.png";
-import logo from "./../../Images/logowhite.png";
 
-const Footer = ({ theme }: { theme: string }) => {
+type FooterProps = {
+  theme: string;
+};
+
+const Footer: React.FC<FooterProps> = ({ theme }) => {
   return (
     <div className="Footer-entire">
       <div className="copyright-footer">

@@ -1,7 +1,11 @@
 import React from "react";
 import avatar from "./../../Images/LucileTech.jpeg";
 
-const Home = ({ theme }: { theme: string }) => {
+type HomeProps = {
+  theme: string;
+};
+
+const Home: React.FC<HomeProps> = ({ theme }) => {
   return (
     <div className="App-homepage" id="homeSection">
       <div className={`Home-title ${theme}`}>
@@ -12,7 +16,7 @@ const Home = ({ theme }: { theme: string }) => {
         <div>
           I am <span className="homeName">Lucile Tronczyk</span>,
         </div>
-        <div>Full Stack Web Developer</div>
+        <div>Web Developer & Full Stack Software Engineer</div>
       </div>
     </div>
   );

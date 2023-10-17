@@ -5,7 +5,11 @@ import github from "./../../Images/github.png";
 import logo from "./../../Images/logowhite.png";
 import NavBurger from "./../../Components/Navbar/Navburger";
 
-const NavBar = ({ theme }: { theme: string }) => {
+type NavBarProps = {
+  theme: string;
+};
+
+const NavBar: React.FC<NavBarProps> = ({ theme }) => {
   const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
   const toggleHamburger = () => {
