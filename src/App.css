@@ -402,7 +402,7 @@ h5 {
 .container .card .face.face1 {
   position: relative;
   inset: 0;
-  background: black url("https://assets.codepen.io/108082/Noise.png");
+  background: #eae2dd;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -416,7 +416,7 @@ h5 {
 }
 
 .container .card .face.face1 .content {
-  opacity: 0.5;
+  opacity: 1;
   transition: 0.5s;
   display: flex;
   flex-direction: column;

@@ -9,7 +9,7 @@ import Works from "./../Components/Works/Works";
 import Contact from "./../Components/ContactForm/ContactForm";
 import Footer from "./../Components/Footer/Footer";
 
-const HomePortfolio = () => {
+const HomePortfolio: React.FC = () => {
   const [theme, setTheme] = React.useState<string>("light");
   const [isLoading, setIsLoading] = useState(true);
 

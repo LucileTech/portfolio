@@ -25,7 +25,11 @@ const reviewsData = [
   // Add more review objects here
 ];
 
-const Reviews = ({ theme }: { theme: string }) => {
+type ReviewsProps = {
+  theme: string;
+};
+
+const Reviews: React.FC<ReviewsProps> = ({ theme }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleNext = () => {
