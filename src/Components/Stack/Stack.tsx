@@ -27,7 +27,7 @@ const Stack: React.FC<StackProps> = ({ theme }) => {
       "Express",
     ],
     [
-      "MongoDB",
+      "Prisma",
       "Git",
       "GitLab",
       "GitHub",
@@ -45,6 +45,16 @@ const Stack: React.FC<StackProps> = ({ theme }) => {
       "React Testing Library",
       "React Native",
       "SQL",
+    ],
+    [
+      "Python",
+      "Google Cloud Platform",
+      "Vertex AI",
+      "Notebook",
+      "Machine Learning",
+      "Big Query",
+      "Sentiment Analysis",
+      "Next.js",
     ],
   ];
 
