@@ -7,6 +7,8 @@ import catgame from "./../../Images/catgame1.png";
 import onecomunity from "./../../Images/onecomunity.png";
 import imagevault from "./../../Images/imagevault.png";
 import icebreaker from "./../../Images/Icebreaker.png";
+import emakia from "./../../Images/emakia.png";
+import GDI from "./../../Images/GDI.png";
 
 type Project = {
   imageSrc: string;
@@ -22,6 +24,18 @@ type WorksProps = {
 };
 
 const projects: Project[] = [
+  {
+    imageSrc: emakia,
+    title: "Emakia",
+    description:
+      "A startup committed to filter out harassing content on social media using Machine Learning & AI",
+    tasks: [
+      "Built an AI text classifier system, and AI methods to filter out harassment on social media platforms",
+      "AI learning experience with Google Cloud Platform, including tools like Vertex AI, Sentiment Analysis, and Big Query",
+    ],
+    codeLink: "",
+    websiteLink: "https://www.emakiatech.com/",
+  },
   {
     imageSrc: onecomunity,
     title: "One Community",
@@ -46,6 +60,20 @@ const projects: Project[] = [
     ],
     codeLink: "",
     websiteLink: "https://www.koalou.com/zencool",
+  },
+  {
+    imageSrc: GDI,
+    title: "GDI Hackathon 2023",
+    description:
+      "SoDoTo - See One, Do One, Teach One, The best way to learn is to teach",
+    tasks: [
+      "Won Crowd's Favorite Prize at Girls Develop It Hackathon 2023",
+      "Coded Back End and Front End from scratch with Node.js, React, JavaScript, Express.js, CSS & HTML",
+      "Integrated React user-facing components with back-end services and responsive design and UX",
+      "Built an API with Node.js and tested it with Postman, used MongoDB with Mongoose connectors",
+      "Set up the hosted data with MongoDB Atlas",
+    ],
+    codeLink: "https://github.com/gdi-edtech/hack23",
   },
   {
     imageSrc: icebreaker,
