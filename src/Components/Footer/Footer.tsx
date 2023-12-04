@@ -1,6 +1,6 @@
 import React from "react";
-import linkedin from "./../../Images/linkedin.png";
-import github from "./../../Images/github.png";
+import linkedin from "./../../Images/linkedin.webp";
+import github from "./../../Images/github.webp";
 
 type FooterProps = {
   theme: string;

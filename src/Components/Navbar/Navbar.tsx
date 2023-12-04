@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
-import linkedin from "./../../Images/linkedin.png";
-import github from "./../../Images/github.png";
-import logo from "./../../Images/logowhite.png";
+import linkedin from "./../../Images/linkedin.webp";
+import github from "./../../Images/github.webp";
+import logo from "./../../Images/logowhite.webp";
 import NavBurger from "./../../Components/Navbar/Navburger";
 
 type NavBarProps = {
