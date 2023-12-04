@@ -1,14 +1,14 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import koalou from "./../../Images/koalou3.png";
-import octopus from "./../../Images/octopus3.png";
-import postit from "./../../Images/postit1.png";
-import catgame from "./../../Images/catgame1.png";
-import onecomunity from "./../../Images/onecomunity.png";
-import imagevault from "./../../Images/imagevault.png";
-import icebreaker from "./../../Images/Icebreaker.png";
-import emakia from "./../../Images/emakia.png";
-import GDI from "./../../Images/GDI.png";
+import koalou from "./../../Images/koalou3.webp";
+import octopus from "./../../Images/octopus3.webp";
+import postit from "./../../Images/postit1.webp";
+import catgame from "./../../Images/catgame1.webp";
+import onecomunity from "./../../Images/onecomunity.webp";
+import imagevault from "./../../Images/imagevault.webp";
+import icebreaker from "./../../Images/Icebreaker.webp";
+import emakia from "./../../Images/emakia.webp";
+import GDI from "./../../Images/GDI.webp";
 
 type Project = {
   imageSrc: string;
