@@ -20,13 +20,13 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
             <img src={project.imageSrc} alt={project.title} />
           )}
           <h3>{project.title}</h3>
-          <h5>{project.description}</h5>
+          <h4>{project.description}</h4>
         </div>
       </div>
       <div className="face face2">
         <div className="content">
           <div className="projectTasks">
-            <h4>What I did :</h4>
+            <h3>What I did :</h3>
             <ul className="projectTasksList">
               {project.tasks.map((task, index) => (
                 <li key={index}>{task}</li>
