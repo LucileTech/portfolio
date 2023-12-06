@@ -1,17 +1,30 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import emakiaSmall from "./../../Images/emakia_small.webp";
+import emakiaMedium from "./../../Images/emakia_medium.webp";
+import emakiaLarge from "./../../Images/emakia_large.webp";
+
+import onecomunitySmall from "./../../Images/onecomunity_small.webp";
+import onecomunityMedium from "./../../Images/onecomunity_medium.webp";
+import onecomunityLarge from "./../../Images/onecomunity_large.webp";
+
 import koalou from "./../../Images/koalou3.webp";
 import octopus from "./../../Images/octopus3.webp";
 import postit from "./../../Images/postit1.webp";
 import catgame from "./../../Images/catgame1.webp";
-import onecomunity from "./../../Images/onecomunity.webp";
 import imagevault from "./../../Images/imagevault.webp";
 import icebreaker from "./../../Images/Icebreaker.webp";
-import emakia from "./../../Images/emakia.webp";
 import GDI from "./../../Images/GDI.webp";
 
+type ImageSizes = {
+  small: string;
+  medium: string;
+  large: string;
+  // Add more sizes if needed
+};
+
 type Project = {
-  imageSrc: string;
+  imageSrc: ImageSizes;
   title: string;
   description: string;
   tasks: string[];
@@ -25,7 +38,11 @@ type WorksProps = {
 
 const projects: Project[] = [
   {
-    imageSrc: emakia,
+    imageSrc: {
+      small: emakiaSmall,
+      medium: emakiaMedium,
+      large: emakiaLarge,
+    },
     title: "Emakia",
     description:
       "A startup committed to filter out harassing content on social media using Machine Learning & AI",
@@ -37,7 +54,11 @@ const projects: Project[] = [
     websiteLink: "https://www.emakiatech.com/",
   },
   {
-    imageSrc: onecomunity,
+    imageSrc: {
+      small: onecomunitySmall,
+      medium: onecomunityMedium,
+      large: onecomunityLarge,
+    },
     title: "One Community",
     description:
       "A global change organization creating blueprints, tools, tutorials for all aspects of sustainable living and creating",
@@ -48,102 +69,102 @@ const projects: Project[] = [
     ],
     codeLink: "https://github.com/OneCommunityGlobal",
   },
-  {
-    imageSrc: koalou,
-    title: "Koalou",
-    description: "A startup committed to the mental well-being of children",
-    tasks: [
-      "Implemented new React components with React and Typescript, with Back End calls and RESTful API endpoints",
-      "Implemented a new design when a certain type of user is connected (Children authentication vs Parents authentication)",
-      "Built entire responsive Web Pages with React.js and Next.js, using React-Bootstrap for the Web Site, based on Figma web designs",
-      "Worked in a technical environment with Graphql, PostgreSQL, Sentry, Google Analytics, collaborated with passion on GitLab",
-    ],
-    codeLink: "",
-    websiteLink: "https://www.koalou.com/zencool",
-  },
-  {
-    imageSrc: GDI,
-    title: "GDI Hackathon 2023",
-    description:
-      "SoDoTo - See One, Do One, Teach One, The best way to learn is to teach",
-    tasks: [
-      "Won Crowd's Favorite Prize at Girls Develop It Hackathon 2023",
-      "Coded Back End and Front End from scratch with Node.js, React, JavaScript, Express.js, CSS & HTML",
-      "Integrated React user-facing components with back-end services and responsive design and UX",
-      "Built an API with Node.js and tested it with Postman, used MongoDB with Mongoose connectors",
-      "Set up the hosted data with MongoDB Atlas",
-    ],
-    codeLink: "https://github.com/gdi-edtech/hack23",
-  },
-  {
-    imageSrc: icebreaker,
-    title: "Ice Breaker",
-    description: "A real-time game designed to break the ice with strangers",
-    tasks: [
-      "Built entire responsive Web Pages with React.js and Next.js, using Tailwind CSS, and Mantine",
-      "Built from scratch with Next.js, React, Typescript, Tailwind CSS, Mantine, Prisma, and Playwright, using Agile Methodology",
-    ],
-    codeLink: "https://github.com/chingu-voyages/v45-tier3-team-51",
-  },
-  {
-    imageSrc: imagevault,
-    title: "Image Vault",
-    description:
-      "A place for museums, archives, and cultural organizations to share their collections",
-    tasks: [
-      "Took part in meetings and worked in a team with Agile Methodology",
-      "Contributed to Developers' best practices for working efficiently as a team with Github and Github Project",
-      "Coded my tasks with React and Redux, Typescript, Next.",
-    ],
-    codeLink: "https://github.com/chingu-voyages/v44-tier3-team-37",
-  },
-  {
-    imageSrc: "Coming Soon",
-    title: "Chores App",
-    description: "A fun Chores App for parents and their children",
-    tasks: [
-      "Took part in design meetings to understand the design progress/purposes, and contributing ideas",
-      "Contributed to Developers best practices for working efficiently as a team: Tickets Integration, Codebase Structure and File Naming conventions, Branches Nomenclature, Pull request template, PR resolution",
-      "Started the code from scratch with React and Redux on the Front and Node.js and PostgreSQL on the back.",
-    ],
-    codeLink: "https://github.com/LucileTech",
-  },
-  {
-    imageSrc: octopus,
-    title: "Octopus",
-    description: "An e-commerce for artists and creators",
-    tasks: [
-      "Coded Back End and Front End from scratch with Node.js, React, JavaScript, Express.js, CSS & HTML",
-      "Made designs on Figma and converted them into UI",
-      "Integrated React user-facing components with back-end services and responsive design and UX",
-      "Built an API with Node.js and tested it with Postman, used MongoDB with Mongoose connectors, implemented admin rights",
-      "Deployed with Netlify and hosted the data with MongoDB Atlas",
-    ],
-    codeLink: "https://github.com/LucileTech/octopus-ecommerce-client",
-  },
-  {
-    imageSrc: postit,
-    title: "Post It",
-    description: "An organizational Web App",
-    tasks: [
-      "Coded Back End and Front End from scratch with JavaScript, Axios, Express.js, Node.js, Handlebars.js, MongoDB, CSS & HTML",
-      "Implemented the API with MongoDB on MongoDB Cloud",
-      "Created the authentication",
-      "Deployed with Onrender and hosted the data with MongoDB Atlas",
-    ],
-    codeLink: "https://github.com/LucileTech/post-it-project",
-  },
-  {
-    imageSrc: catgame,
-    title: "The Cat and The Fantastic Forest",
-    description: "A browser game",
-    tasks: [
-      "Coded with JavaScript, CSS & HTML",
-      "Handled the animation with Canvas",
-      "Deployed with Git Pages",
-    ],
-    codeLink: "https://github.com/LucileTech/the-cat-and-the-fantastic-forest",
-  },
+  // {
+  //   imageSrc: koalou,
+  //   title: "Koalou",
+  //   description: "A startup committed to the mental well-being of children",
+  //   tasks: [
+  //     "Implemented new React components with React and Typescript, with Back End calls and RESTful API endpoints",
+  //     "Implemented a new design when a certain type of user is connected (Children authentication vs Parents authentication)",
+  //     "Built entire responsive Web Pages with React.js and Next.js, using React-Bootstrap for the Web Site, based on Figma web designs",
+  //     "Worked in a technical environment with Graphql, PostgreSQL, Sentry, Google Analytics, collaborated with passion on GitLab",
+  //   ],
+  //   codeLink: "",
+  //   websiteLink: "https://www.koalou.com/zencool",
+  // },
+  // {
+  //   imageSrc: GDI,
+  //   title: "GDI Hackathon 2023",
+  //   description:
+  //     "SoDoTo - See One, Do One, Teach One, The best way to learn is to teach",
+  //   tasks: [
+  //     "Won Crowd's Favorite Prize at Girls Develop It Hackathon 2023",
+  //     "Coded Back End and Front End from scratch with Node.js, React, JavaScript, Express.js, CSS & HTML",
+  //     "Integrated React user-facing components with back-end services and responsive design and UX",
+  //     "Built an API with Node.js and tested it with Postman, used MongoDB with Mongoose connectors",
+  //     "Set up the hosted data with MongoDB Atlas",
+  //   ],
+  //   codeLink: "https://github.com/gdi-edtech/hack23",
+  // },
+  // {
+  //   imageSrc: icebreaker,
+  //   title: "Ice Breaker",
+  //   description: "A real-time game designed to break the ice with strangers",
+  //   tasks: [
+  //     "Built entire responsive Web Pages with React.js and Next.js, using Tailwind CSS, and Mantine",
+  //     "Built from scratch with Next.js, React, Typescript, Tailwind CSS, Mantine, Prisma, and Playwright, using Agile Methodology",
+  //   ],
+  //   codeLink: "https://github.com/chingu-voyages/v45-tier3-team-51",
+  // },
+  // {
+  //   imageSrc: imagevault,
+  //   title: "Image Vault",
+  //   description:
+  //     "A place for museums, archives, and cultural organizations to share their collections",
+  //   tasks: [
+  //     "Took part in meetings and worked in a team with Agile Methodology",
+  //     "Contributed to Developers' best practices for working efficiently as a team with Github and Github Project",
+  //     "Coded my tasks with React and Redux, Typescript, Next.",
+  //   ],
+  //   codeLink: "https://github.com/chingu-voyages/v44-tier3-team-37",
+  // },
+  // {
+  //   imageSrc: "Coming Soon",
+  //   title: "Chores App",
+  //   description: "A fun Chores App for parents and their children",
+  //   tasks: [
+  //     "Took part in design meetings to understand the design progress/purposes, and contributing ideas",
+  //     "Contributed to Developers best practices for working efficiently as a team: Tickets Integration, Codebase Structure and File Naming conventions, Branches Nomenclature, Pull request template, PR resolution",
+  //     "Started the code from scratch with React and Redux on the Front and Node.js and PostgreSQL on the back.",
+  //   ],
+  //   codeLink: "https://github.com/LucileTech",
+  // },
+  // {
+  //   imageSrc: octopus,
+  //   title: "Octopus",
+  //   description: "An e-commerce for artists and creators",
+  //   tasks: [
+  //     "Coded Back End and Front End from scratch with Node.js, React, JavaScript, Express.js, CSS & HTML",
+  //     "Made designs on Figma and converted them into UI",
+  //     "Integrated React user-facing components with back-end services and responsive design and UX",
+  //     "Built an API with Node.js and tested it with Postman, used MongoDB with Mongoose connectors, implemented admin rights",
+  //     "Deployed with Netlify and hosted the data with MongoDB Atlas",
+  //   ],
+  //   codeLink: "https://github.com/LucileTech/octopus-ecommerce-client",
+  // },
+  // {
+  //   imageSrc: postit,
+  //   title: "Post It",
+  //   description: "An organizational Web App",
+  //   tasks: [
+  //     "Coded Back End and Front End from scratch with JavaScript, Axios, Express.js, Node.js, Handlebars.js, MongoDB, CSS & HTML",
+  //     "Implemented the API with MongoDB on MongoDB Cloud",
+  //     "Created the authentication",
+  //     "Deployed with Onrender and hosted the data with MongoDB Atlas",
+  //   ],
+  //   codeLink: "https://github.com/LucileTech/post-it-project",
+  // },
+  // {
+  //   imageSrc: catgame,
+  //   title: "The Cat and The Fantastic Forest",
+  //   description: "A browser game",
+  //   tasks: [
+  //     "Coded with JavaScript, CSS & HTML",
+  //     "Handled the animation with Canvas",
+  //     "Deployed with Git Pages",
+  //   ],
+  //   codeLink: "https://github.com/LucileTech/the-cat-and-the-fantastic-forest",
+  // },
 ];
 
 const Works: React.FC<WorksProps> = ({ theme }) => {

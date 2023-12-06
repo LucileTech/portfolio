@@ -13,7 +13,6 @@ const Footer = lazy(() => import("./../Components/Footer/Footer"));
 
 const HomePortfolio: React.FC = () => {
   const [theme, setTheme] = React.useState<string>("light");
-  const [isLoading, setIsLoading] = useState(true);
 
   const toggleTheme = () => {
     if (theme === "dark") {
@@ -22,26 +21,6 @@ const HomePortfolio: React.FC = () => {
       setTheme("dark");
     }
   };
-
-  useEffect(() => {
-    // Creating a timeout within the useEffect hook
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2500);
-  }, []);
-
-  // if (isLoading) {
-  //   return (
-  //     <div className="preLoader">
-  //       <ReactLoading
-  //         type={"spinningBubbles"}
-  //         color={"#a3dafb"}
-  //         height={200}
-  //         width={200}
-  //       />
-  //     </div>
-  //   );
-  // }
 
   return (
     <div className={`app ${theme}`}>
@@ -67,11 +46,12 @@ const HomePortfolio: React.FC = () => {
         <Contact theme={theme}></Contact>
         <div className="Footer-toggle">
           <label className="switch" htmlFor="themeToggle">
+            {/* Text for the label */}
             <input
               type="checkbox"
-              id="themeToggle" // Assign an id for the label's 'for' attribute
+              id="themeToggle"
               onClick={toggleTheme}
-              aria-labelledby="themeToggle" // Reference the label's id for screen readers
+              // Remove aria-labelledby from here
             />
             <span className="slider round"> </span>
           </label>
