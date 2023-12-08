@@ -1,7 +1,12 @@
 import React from "react";
 
 interface Project {
-  imageSrc: string;
+  imageSrc: {
+    small: string;
+    medium: string;
+    large: string;
+    // Add more sizes if needed
+  };
   title: string;
   description: string;
   tasks: string[];
@@ -14,10 +19,15 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
     <div className="card">
       <div className="face face1">
         <div className="content">
-          {project.imageSrc === "Coming Soon" ? (
+          {project.imageSrc.small === "Coming Soon" ? (
             <div className="comingSoonText">Coming Soon</div>
           ) : (
-            <img src={project.imageSrc} alt={project.title} />
+            <img
+              src={project.imageSrc.small}
+              srcSet={`${project.imageSrc.small} 500w, ${project.imageSrc.medium} 1000w, ${project.imageSrc.large} 2000w`}
+              sizes="(max-width: 500px) 500px, (max-width: 1000px) 1000px, 2000px"
+              alt={project.title}
+            />
           )}
           <h3>{project.title}</h3>
           <h4>{project.description}</h4>

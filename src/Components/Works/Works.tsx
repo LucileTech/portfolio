@@ -1,17 +1,50 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
-import koalou from "./../../Images/koalou3.webp";
-import octopus from "./../../Images/octopus3.webp";
-import postit from "./../../Images/postit1.webp";
-import catgame from "./../../Images/catgame1.webp";
-import onecomunity from "./../../Images/onecomunity.webp";
-import imagevault from "./../../Images/imagevault.webp";
-import icebreaker from "./../../Images/Icebreaker.webp";
-import emakia from "./../../Images/emakia.webp";
-import GDI from "./../../Images/GDI.webp";
+import emakiaSmall from "./../../Images/emakia_small.webp";
+import emakiaMedium from "./../../Images/emakia_medium.webp";
+import emakiaLarge from "./../../Images/emakia_large.webp";
+
+import onecomunitySmall from "./../../Images/onecomunity_small.webp";
+import onecomunityMedium from "./../../Images/onecomunity_medium.webp";
+import onecomunityLarge from "./../../Images/onecomunity_large.webp";
+
+import koalouSmall from "./../../Images/koalou_small.webp";
+import koalouMedium from "./../../Images/koalou_medium.webp";
+import koalouLarge from "./../../Images/koalou_large.webp";
+
+import octopusSmall from "./../../Images/octopus_small.webp";
+import octopusMedium from "./../../Images/octopus_medium.webp";
+import octopusLarge from "./../../Images/octopus_large.webp";
+
+import postitSmall from "./../../Images/postit_small.webp";
+import postitMedium from "./../../Images/postit_medium.webp";
+import postitLarge from "./../../Images/postit_large.webp";
+
+import catgameSmall from "./../../Images/catgame_small.webp";
+import catgameMedium from "./../../Images/catgame_medium.webp";
+import catgameLarge from "./../../Images/catgame_large.webp";
+
+import imagevaultSmall from "./../../Images/imagevault_small.webp";
+import imagevaultMedium from "./../../Images/imagevault_medium.webp";
+import imagevaultLarge from "./../../Images/imagevault_large.webp";
+
+import icebreakerSmall from "./../../Images/Icebreaker_small.webp";
+import icebreakerMedium from "./../../Images/Icebreaker_medium.webp";
+import icebreakerLarge from "./../../Images/Icebreaker_large.webp";
+
+import GDISmall from "./../../Images/GDI_small.webp";
+import GDIMedium from "./../../Images/GDI_medium.webp";
+import GDILarge from "./../../Images/GDI_large.webp";
+
+type ImageSizes = {
+  small: string;
+  medium: string;
+  large: string;
+  // Add more sizes if needed
+};
 
 type Project = {
-  imageSrc: string;
+  imageSrc: ImageSizes;
   title: string;
   description: string;
   tasks: string[];
@@ -25,7 +58,11 @@ type WorksProps = {
 
 const projects: Project[] = [
   {
-    imageSrc: emakia,
+    imageSrc: {
+      small: emakiaSmall,
+      medium: emakiaMedium,
+      large: emakiaLarge,
+    },
     title: "Emakia",
     description:
       "A startup committed to filter out harassing content on social media using Machine Learning & AI",
@@ -37,7 +74,11 @@ const projects: Project[] = [
     websiteLink: "https://www.emakiatech.com/",
   },
   {
-    imageSrc: onecomunity,
+    imageSrc: {
+      small: onecomunitySmall,
+      medium: onecomunityMedium,
+      large: onecomunityLarge,
+    },
     title: "One Community",
     description:
       "A global change organization creating blueprints, tools, tutorials for all aspects of sustainable living and creating",
@@ -49,7 +90,11 @@ const projects: Project[] = [
     codeLink: "https://github.com/OneCommunityGlobal",
   },
   {
-    imageSrc: koalou,
+    imageSrc: {
+      small: koalouSmall,
+      medium: koalouMedium,
+      large: koalouLarge,
+    },
     title: "Koalou",
     description: "A startup committed to the mental well-being of children",
     tasks: [
@@ -62,7 +107,11 @@ const projects: Project[] = [
     websiteLink: "https://www.koalou.com/zencool",
   },
   {
-    imageSrc: GDI,
+    imageSrc: {
+      small: GDISmall,
+      medium: GDIMedium,
+      large: GDILarge,
+    },
     title: "GDI Hackathon 2023",
     description:
       "SoDoTo - See One, Do One, Teach One, The best way to learn is to teach",
@@ -76,7 +125,11 @@ const projects: Project[] = [
     codeLink: "https://github.com/gdi-edtech/hack23",
   },
   {
-    imageSrc: icebreaker,
+    imageSrc: {
+      small: icebreakerSmall,
+      medium: icebreakerMedium,
+      large: icebreakerLarge,
+    },
     title: "Ice Breaker",
     description: "A real-time game designed to break the ice with strangers",
     tasks: [
@@ -86,7 +139,11 @@ const projects: Project[] = [
     codeLink: "https://github.com/chingu-voyages/v45-tier3-team-51",
   },
   {
-    imageSrc: imagevault,
+    imageSrc: {
+      small: imagevaultSmall,
+      medium: imagevaultMedium,
+      large: imagevaultLarge,
+    },
     title: "Image Vault",
     description:
       "A place for museums, archives, and cultural organizations to share their collections",
@@ -98,7 +155,11 @@ const projects: Project[] = [
     codeLink: "https://github.com/chingu-voyages/v44-tier3-team-37",
   },
   {
-    imageSrc: "Coming Soon",
+    imageSrc: {
+      small: "Coming Soon",
+      medium: "Coming Soon",
+      large: "Coming Soon",
+    },
     title: "Chores App",
     description: "A fun Chores App for parents and their children",
     tasks: [
@@ -109,7 +170,11 @@ const projects: Project[] = [
     codeLink: "https://github.com/LucileTech",
   },
   {
-    imageSrc: octopus,
+    imageSrc: {
+      small: octopusSmall,
+      medium: octopusMedium,
+      large: octopusLarge,
+    },
     title: "Octopus",
     description: "An e-commerce for artists and creators",
     tasks: [
@@ -122,7 +187,11 @@ const projects: Project[] = [
     codeLink: "https://github.com/LucileTech/octopus-ecommerce-client",
   },
   {
-    imageSrc: postit,
+    imageSrc: {
+      small: postitSmall,
+      medium: postitMedium,
+      large: postitLarge,
+    },
     title: "Post It",
     description: "An organizational Web App",
     tasks: [
@@ -134,7 +203,11 @@ const projects: Project[] = [
     codeLink: "https://github.com/LucileTech/post-it-project",
   },
   {
-    imageSrc: catgame,
+    imageSrc: {
+      small: catgameSmall,
+      medium: catgameMedium,
+      large: catgameLarge,
+    },
     title: "The Cat and The Fantastic Forest",
     description: "A browser game",
     tasks: [
